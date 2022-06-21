@@ -145,11 +145,7 @@
 					<i class="icon-reorder"></i>
 				</label>
 				<a href="#" class="enlace">
-<<<<<<< HEAD
-					<img class="logoA" src="{!! asset('images/Logotipo-01.png') !!}" alt="Altcel">
-=======
 				    <img class="logoA {{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'img_logo' : ''}}" src="{!! asset('images/Logotipo-01.png') !!}" alt="Altcel">
->>>>>>> 7e687e8 (Mover left de nav)
 				</a>
 				{{-- <a href="{!! URL::to('/') !!}" class=""><img class="logoA" src="{!! asset('images/Logotipo-01.png') !!}" alt="Altcel"></a> --}}
 				<ul>
