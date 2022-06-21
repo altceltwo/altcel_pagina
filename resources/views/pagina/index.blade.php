@@ -4,6 +4,54 @@
 <section id="slider"  class="slider-element slider-parallax swiper_wrapper full-screen clearfix">
 	<div class="slider-parallax-inner">
  
+	  <!-- <div class="swiper-container swiper-parent " style="background-image: url('images/QuienesSomos.jpg'); background-size: cover;background-repeat: no-repeat;">
+	    <div class="swiper-wrapper">
+        <div class="swiper-slide dark" >
+          <div class="col_one_third" id="indexp">
+            <p class="text-justify animate__animated animate__pulse animate__infinite">
+              ¡Disfruta <strong>al máximo</strong> de todos los beneficios de cambiarte a Altcel!
+            </p>
+            <div class="row" id="btnIndex">
+              <a href="{!! URL::to('planes') !!}" class="btn btnprincipal1">PAQUETES<i class="fa-solid fa-box-open"></i></a>
+              <a href="https://altcel2.com/" class="btn btnprincipal2" >INTERNET<i class="fa-solid fa-earth-americas"></i></a>
+            </div>
+          </div>
+        </div>
+	    </div>
+	  </div> -->
+
+    <!-- <div class="col_one_third" id="indexp">
+            <p class="text-justify animate__animated animate__pulse animate__infinite">
+              ¡Disfruta <strong>al máximo</strong> de todos los beneficios de cambiarte a Altcel!
+            </p>
+            <div class="row" id="btnIndex">
+              <a href="{!! URL::to('planes') !!}" class="btn btnprincipal1">PAQUETES<i class="fa-solid fa-box-open"></i></a>
+              <a href="https://altcel2.com/" class="btn btnprincipal2" >INTERNET<i class="fa-solid fa-earth-americas"></i></a>
+            </div>
+      </div> -->
+
+      
+    <div class="slider">
+    <div class="col_one_third slider__informa" id="indexp">
+            <p class="text-justify animate__animated animate__pulse animate__infinite color-text">
+              ¡Disfruta <strong>al máximo</strong> de todos los beneficios de cambiarte a Altcel!
+            </p>
+            <div class="row" id="btnIndex">
+              <a href="{!! URL::to('planes') !!}" class="btn btnprincipal1">PAQUETES<i class="fa-solid fa-box-open"></i></a>
+              <a href="https://altcel2.com/" class="btn btnprincipal2" >INTERNET<i class="fa-solid fa-earth-americas"></i></a>
+            </div>
+      </div>
+            <ul class="ul-imagen">
+                <li class="li-imagen"><img src = "{!! asset('images/car1.jpg') !!}"></li>
+                <li class="li-imagen"><img src = "{!! asset('images/car2.jpg') !!}"></li>
+                <li class="li-imagen"><img src = "{!! asset('images/car1.jpg') !!}"></li>
+                <li class="li-imagen"><img src = "{!! asset('images/car2.jpg') !!}"></li>
+                <li class="li-imagen"><img src = "{!! asset('images/car1.jpg') !!}"></li>
+            </ul>
+    </div>
+
+
+<!--  
 	  <div class="swiper-container swiper-parent " style="background-image: url('images/QuienesSomos.jpg'); background-size: cover;background-repeat: no-repeat;">
 	    <div class="swiper-wrapper">
         <div class="swiper-slide dark" >
@@ -12,13 +60,13 @@
               ¡Disfruta <strong>al máximo</strong> de todos los beneficios de cambiarte a Altcel!
             </p>
             <div class="row" id="btnIndex">
-              <a href="{!! URL::to('planes') !!}" class="btn btnprincipal1">PAQUETES</a>
-              <a href="https://altcel2.com/" class="btn btnprincipal2" >INTERNET</a>
+              <a href="{!! URL::to('planes') !!}" class="btn btnprincipal1">PAQUETES<i class="fa-solid fa-box-open"></i></a>
+              <a href="https://altcel2.com/" class="btn btnprincipal2" >INTERNET<i class="fa-solid fa-earth-americas"></i></a>
             </div>
           </div>
         </div>
 	    </div>
-	  </div>
+	  </div> -->
  
 	  <a href="#" data-scrollto="#content" data-offset="100" class="dark one-page-arrow"><i class="icon-angle-down infinite animated fadeInDown"></i></a>
  
@@ -29,9 +77,18 @@
 
     <div class="container clearfix">
       <div class="row" >
-        <a href="{!! URL::to('planes') !!}" class="btn btnIndexOpt" ><img class="icon-index" src="{!! asset('images/1Paquetes.png') !!}" alt="Paquetes">Paquetes</a>
-        <a href="https://altcel2.com/" class="btn btnIndexOpt" ><img class="icon-index" src="{!! asset('images/2Internet.png') !!}" alt="Internet">Internet</a>
-        <a href="{!! URL::to('soporte') !!}" class="btn btnIndexOpt" ><img class="icon-index" src="{!! asset('images/3Soporte.png') !!}" alt="Soporte">Soporte</a>
+        <a href="{!! URL::to('planes') !!}" class="btn btnIndexOpt btn-informacion" >
+          <img class="icon-index" src="{!! asset('images/paquete.gif') !!}" alt="Paquetes">
+          <h2 class="paquete">Paquetes</h2>
+        </a>
+        <a href="https://altcel2.com/" class="btn btnIndexOpt btn-informacion" >
+          <img class="icon-index" src="{!! asset('images/internet.gif') !!}" alt="Internet">
+          <h2 class="paquete">Internet</h2>
+        </a>
+        <a href="{!! URL::to('soporte') !!}" class="btn btnIndexOpt btn-informacion" >
+          <img class="icon-index" src="{!! asset('images/soporte.gif') !!}" alt="Soporte">
+          <h2 class="paquete">Soporte</h2>
+        </a>
       </div>
     </div>
 
