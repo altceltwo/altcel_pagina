@@ -10744,16 +10744,19 @@ body:not(.no-transition) #wrapper,
 }
 
 .img-paquetes{
-	margin-left: 57rem;
-	margin-top: -36rem;
-	height: 40rem;
-	width: 84rem;
+  margin-left: 57rem;
+  margin-top: -36rem;
+  height: 42rem;
+  width: 88rem;
+  -moz-transform: rotate(18deg);
+  margin-bottom: -3rem;
+
 }
 .img-socialNetwork{
-	margin-left: 73rem;
+	margin-left: 44rem;
 	margin-top: -9rem;
 	height: 25rem;
-	width: 38rem;
+	width: 45rem;
 }
 
 .img-paquete{
@@ -11599,9 +11602,9 @@ color: white;
 	 
  }
  .oton{
-	background-color: #0a2153!important;
+	background-color: #0a2153 !important;
 	width: 19.5rem !important;
-	height: 10.7rem !important;
+	height: 11.3rem !important;
  }
  .mito2:hover{
 	transform: scale(1.1);
@@ -11658,8 +11661,8 @@ color: white;
  
  margin-left: 17.3rem;
  width: 10.24rem !important;
- margin-top: -12.7rem;
- height: 10.8rem;
+ margin-top: -13.2rem;
+ height: 11.3rem;
  
  /* margin-left: -7.2rem;
  width: 6.2rem !important;

@@ -195,7 +195,7 @@
 			   <div class="col_one_third">
 					<div class="widget clearfix">
 						<h4>Contáctanos</h4>
-						<div class="fslider testimonial no-image nobg noborder noshadow nopadding contact">
+						<div class="fslider  no-image nobg noborder noshadow nopadding contact">
 							<div class="flexslider">
 								<div class="slider-wrap ">
 									<li>E-mail: contacto@altcel.com</li>
@@ -209,7 +209,7 @@
 			   <div class="col_one_third mov-direcc">
 					<div class="widget clearfix">
 						<h4>Dirección</h4>
-						<div class="fslider testimonial no-image nobg noborder noshadow nopadding contact">
+						<div class="fslider  no-image nobg noborder noshadow nopadding contact">
 							<div class="flexslider">
 								<div class="slider-wrap">
 									<li>Circuito de la 10a Poniente Norte No. 1050 Interior 1-A. Colonia Vista Hermosa. CP.29030. Tuxtla Gutiérrez, Chiapa.</li>
@@ -258,7 +258,7 @@
 				 <div class="col_one_third mov-redes__sociales">
 					<div class="widget clearfix">
 						<h4>Contáctanos</h4>
-						<div class="fslider testimonial no-image nobg noborder noshadow nopadding contact">
+						<div class="fslider  no-image nobg noborder noshadow nopadding contact">
 							<div class="flexslider">
 								<div class="slider-wrap ">
 									<a href="https://www.facebook.com/AltcelMx/"class="ligas">
