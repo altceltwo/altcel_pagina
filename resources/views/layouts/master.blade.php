@@ -56,6 +56,7 @@
 
 
 	<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
@@ -89,7 +90,6 @@
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PXP9462"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
-
     <!-- Facebook Pixel Code -->
 	<script>
         !function(f,b,e,v,n,t,s)
@@ -139,7 +139,7 @@
 
 			</div> --}}
 
-			<nav>
+			<nav class="{{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_bar' : ''}}">
 				<input type="checkbox" id="check">
 				<label for="check" class="checkbtn">
 					<i class="icon-reorder"></i>
@@ -149,11 +149,11 @@
 				</a>
 				{{-- <a href="{!! URL::to('/') !!}" class=""><img class="logoA" src="{!! asset('images/Logotipo-01.png') !!}" alt="Altcel"></a> --}}
 				<ul>
-					<li><a href="{!! URL::to('/') !!}">Inicio</a></li>
-					<li><a href="{!! URL::to('recargas') !!}">Recargas</a></li>
-					<li><a href="{!! URL::to('quienesomos') !!}">Nosotros</a></li>
-					<li><a href="{!! URL::to('planes') !!}">Servicios</a></li>
-					<li><a href="{!! URL::to('soporte') !!}">Soporte</a></li>
+				    <li><a href="{!! URL::to('/') !!}">Inicio</a></li>
+				    <li><a id="test" href="{!! URL::to('recargas') !!}" onclick="myFun()">Recargas</a></li>
+				    <li><a href="{!! URL::to('quienesomos') !!}">Nosotros</a></li>
+				    <li><a href="{!! URL::to('planes') !!}">Servicios</a></li>
+				    <li><a href="{!! URL::to('soporte') !!}">Soporte</a></li>
 				</ul>
 			</nav> 
 			{{-- <section class="menu2nav"></section> --}}
@@ -167,7 +167,7 @@
 	<img src="{!! asset('images/WhatsApp.png') !!}" width="50" height="50">
   </a> --}}
     <!-- Footer============================================= -->
-    {{-- <footer id="footer-redes" style="display: flex; margin-top: 8rem">
+    <!-- <footer id="footer-redes" style="display: flex; margin-top: 8rem">
 	    <div class="col_full center">
 		    <div >
 			    <div class="row" style="align-content: center">
@@ -179,7 +179,7 @@
 			    </div>
 		    </div>
 	    </div>
-    </footer> --}}
+    </footer> -->
 
     <!-- Footer
         ============================================= -->
@@ -189,42 +189,99 @@
 		    <!-- Footer Widgets
 		    ============================================= -->
 		    <div class="footer-widgets-wrap clearfix">
-			    <div class="col-md-12">
+			    <!-- <div class="col-md-12">
 				    <p class="pFooter">Circuito de la 10a Poniente Norte No. 1050 Interior 1-A. Colonia Vista Hermosa. CP.29030. Tuxtla Gutiérrez, Chiapa.</p> 
-			    </div>
+			    </div> -->
 			   <div class="col_one_third">
-
-				  <div class="widget clearfix">
-					 <h4>Contáctanos</h4>
-
-					 <div class="fslider testimonial no-image nobg noborder noshadow nopadding contact">
-						<div class="flexslider">
-						    <div class="slider-wrap ">
-
-								   <li>E-mail: contacto@altcel.com</li>
-								   <li>Teléfono: 800 225 8235</li>
-							   
-						    </div>
+					<div class="widget clearfix">
+						<h4>Contáctanos</h4>
+						<div class="fslider testimonial no-image nobg noborder noshadow nopadding contact">
+							<div class="flexslider">
+								<div class="slider-wrap ">
+									<li>E-mail: contacto@altcel.com</li>
+									<li>Teléfono: 800 225 8235</li>
+								</div>
+							</div>
 						</div>
-					 </div>
-
-				  </div>
-
-			   </div>
-			   <div class="col_one_third col_last" style="margin-left: -20rem; margin-top: -50px">
-				<div class="widget quick-contact-widget clearfix direccion">
-					<div class="widget clearfix ">
-						<h4 style="margin-top: 4rem;margin-left: 9rem">Ligas de Interes</h4>
-						<div class="ligasInteres">
-						<li style="list-style: none;"><a href="/" style="color: #CCC"><i class="fa fa-angle-right">AVISO DE PRIVACIDAD</i></a></li>
-						<li style="list-style: none;"><a href="{!! URL::to('quienesomos') !!}" style="color: #CCC"><i style="color: white" class="fa-user"></i>TÉRMINOS Y CONDICIONES</a></li>
-						<li style="list-style: none;"><a href="{!! URL::to('planes') !!}" style="color: #CCC"><i class="fa fa-angle-right"></i>COBERTURA</a></li>
-						<li style="list-style: none;"><a href="{!! URL::to('planes') !!}" style="color: #CCC"><i class="fa fa-angle-right"></i>LEGALES</a></li>
-						<li style="list-style: none;"><a href="{!! URL::to('planes') !!}" style="color: #CCC"><i class="fa fa-angle-right"></i>CONVIÉRTETE EN DISTRIBUIDOR</a></li>
 					</div>
-					 </div>
 				</div>
-			 </div>
+				
+			   <div class="col_one_third mov-direcc">
+					<div class="widget clearfix">
+						<h4>Dirección</h4>
+						<div class="fslider testimonial no-image nobg noborder noshadow nopadding contact">
+							<div class="flexslider">
+								<div class="slider-wrap">
+									<li>Circuito de la 10a Poniente Norte No. 1050 Interior 1-A. Colonia Vista Hermosa. CP.29030. Tuxtla Gutiérrez, Chiapa.</li>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			   <div class="col_one_third col_last mov-ligas">
+					<div class="widget quick-contact-widget clearfix direccion">
+						<div class="widget clearfix ">
+							<h4 style="margin-top: 5rem;margin-left: 9rem">Ligas de Interes</h4>
+							<div class="ligasInteres">
+								<li style="list-style: none;">
+									<a href="/" class="ligas">
+										<!-- <i class="fa fa-angle-right"></i>AVISO DE PRIVACIDAD-->
+										AVISO DE PRIVACIDAD
+									</a>
+								</li>
+								<li style="list-style: none;">
+									<a href="{!! URL::to('quienesomos') !!}" class="ligas">
+										TÉRMINOS Y CONDICIONES
+									</a>
+								</li>
+								<li style="list-style: none;">
+									<a href="{!! URL::to('planes') !!}" class="ligas">
+										COBERTURA
+									</a>
+								</li>
+								<li style="list-style: none;">
+									<a href="{!! URL::to('planes') !!}" class="ligas">
+										LEGALES
+									</a>
+								</li>
+								<li style="list-style: none;">
+									<a href="{!! URL::to('planes') !!}" class="ligas">
+										CONVIÉRTETE EN DISTRIBUIDOR
+									</a>
+								</li>
+							</div>
+						</div>
+					</div>
+			 	</div>
+
+				 <div class="col_one_third mov-redes__sociales">
+					<div class="widget clearfix">
+						<h4>Contáctanos</h4>
+						<div class="fslider testimonial no-image nobg noborder noshadow nopadding contact">
+							<div class="flexslider">
+								<div class="slider-wrap ">
+									<a href="https://www.facebook.com/AltcelMx/"class="ligas">
+										<li><i class="fa-brands fa-facebook"></i>Facebook</li>
+									</a>
+									<a href="https://www.instagram.com/altcelmx/" class="ligas">
+										<li><i class="fa-brands fa-instagram"></i>Instagram</li>
+									</a>
+									<a href="https://twitter.com/AltcelMx" class="ligas">
+										<li><i class="fa-brands fa-twitter"></i>Twitter</li>
+									</a>
+									<a href="https://www.youtube.com/channel/UCAa9VVtFtVk_ehLHdnV41EA?view_as=subscriber" class="ligas">
+										<li><i class="fa-brands fa-youtube"></i>Youtube</li>
+									</a>
+									<a href="https://api.whatsapp.com/send?phone=525612010013&app=facebook&entry_point=page_cta" class="ligas">
+										<li><i class="fa-brands fa-whatsapp-square"></i>Whatsapp</li>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
 
 			   <div class="col_one_third" style="margin-left: 5rem;margin-top: 50px">
 				  <div class="widget quick-contact-widget clearfix navlink">
@@ -265,7 +322,8 @@
 {{-- {!! Html::script('pagina/js/functions.js') !!} --}}
 
 <script>
-	const menu = document.getElementById('menu');
+
+const menu = document.getElementById('menu');
 const indicador = document.getElementById('indicador');
 const secciones = document.querySelectorAll('.seccion');
 
