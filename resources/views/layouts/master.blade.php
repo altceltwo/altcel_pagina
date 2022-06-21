@@ -145,15 +145,15 @@
 					<i class="icon-reorder"></i>
 				</label>
 				<a href="#" class="enlace">
-					<img class="logoA" src="{!! asset('images/Logotipo-01.png') !!}" alt="Altcel">
+				    <img class="logoA {{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'img_logo' : ''}}" src="{!! asset('images/Logotipo-01.png') !!}" alt="Altcel">
 				</a>
 				{{-- <a href="{!! URL::to('/') !!}" class=""><img class="logoA" src="{!! asset('images/Logotipo-01.png') !!}" alt="Altcel"></a> --}}
 				<ul>
-				    <li><a href="{!! URL::to('/') !!}">Inicio</a></li>
-				    <li><a id="test" href="{!! URL::to('recargas') !!}" onclick="myFun()">Recargas</a></li>
-				    <li><a href="{!! URL::to('quienesomos') !!}">Nosotros</a></li>
-				    <li><a href="{!! URL::to('planes') !!}">Servicios</a></li>
-				    <li><a href="{!! URL::to('soporte') !!}">Soporte</a></li>
+				    <li class="animate__animated animate__backInLeft {{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_li' : ''}}"><a href="{!! URL::to('/') !!}">Inicio</a></li>
+				    <li class="animate__animated animate__backInLeft {{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_li' : ''}}"><a id="test" href="{!! URL::to('recargas') !!}" onclick="myFun()">Recargas</a></li>
+				    <li class="animate__animated animate__backInLeft {{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_li' : ''}}"><a href="{!! URL::to('quienesomos') !!}">Nosotros</a></li>
+				    <li class="animate__animated animate__backInLeft {{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_li' : ''}}"><a href="{!! URL::to('planes') !!}">Servicios</a></li>
+				    <li class="animate__animated animate__backInLeft {{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_li' : ''}}"><a href="{!! URL::to('soporte') !!}">Soporte</a></li>
 				</ul>
 			</nav> 
 			{{-- <section class="menu2nav"></section> --}}
