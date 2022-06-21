@@ -10768,9 +10768,9 @@ body:not(.no-transition) #wrapper,
 .img-paquetes{
   margin-left: 57rem;
   margin-top: -36rem;
-  height: 45rem;
-  width: 99rem;
-  transform: rotate(25dep);
+  height: 46rem;
+  width: 100rem;
+  -webkit-transform: rotate(24deg);
   margin-bottom: -3rem;
 
 }
