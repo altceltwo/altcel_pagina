@@ -123,7 +123,7 @@ dl, dt, dd, ol, ul, li {
     margin-left: -0.3rem;
     font-size: 18px!important;
     background-color: red;
-    color: white;
+    color: white!important;
     width: 17rem;
 }
 .fa-box-open{
@@ -154,10 +154,19 @@ dl, dt, dd, ol, ul, li {
 .btnprincipal1:hover{
 	background-color: white;
 	color: red!important;
+
+
+	/* box-shadow: 0 4px 16px rgba(49, 138, 172, 1); */
+	box-shadow: 0 10px 20px rgba(49, 138, 172, 1);
+	transition: all 0.4s ease;
 }
 .btnprincipal2:hover{
 	background-color: red;
 	color: white;
+
+	/* box-shadow: 0 4px 16px rgba(49, 138, 172, 1); */
+	box-shadow: 0 10px 20px rgba(49, 138, 172, 1);
+	transition: all 0.4s ease;
 }
 .ligas{
 	color: #CCC;
@@ -10861,6 +10870,11 @@ body:not(.no-transition) #wrapper,
 	height: 63px;
 	margin-top: -5rem;
 }
+ 
+.img_logo{
+	height: 63px;
+    margin-top: -2rem;
+}
 
  .accordion-titulo span.toggle-icon:before {
 	content: url('images/9-Flechita2.png');
@@ -11432,6 +11446,7 @@ nav .indicador {
 
  .nav_bar{
 	background: #c71326;
+	margin-top: -2rem;
  }
  .enlace{
 	position: absolute;
@@ -11442,7 +11457,8 @@ nav .indicador {
  }
  nav ul{
 	/* float: right; */
-    margin-left: 82rem;
+    /* margin-left: 82rem; */
+	margin-left: 77rem;
 	margin-top: 2rem;
  }
  nav ul li{
@@ -11450,6 +11466,12 @@ nav .indicador {
 	line-height: 80px;
 	margin: 0 5px;
 	margin-top: -2rem;
+ }
+ .nav_li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+	margin-top: 0rem;
  }
  nav ul li a{
 	color: #fff;

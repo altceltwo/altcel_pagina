@@ -32,8 +32,8 @@
 
       
     <div class="slider">
-    <div class="col_one_third slider__informa" id="indexp">
-            <p class="text-justify animate__animated animate__pulse animate__infinite color-text">
+    <div class="col_one_third slider__informa " id="indexp">
+            <p class="text-justify animate__animated animate__pulse animate__infinite color-text ">
               ¡Disfruta <strong>al máximo</strong> de todos los beneficios de cambiarte a Altcel!
             </p>
             <div class="row" id="btnIndex">
@@ -42,9 +42,9 @@
             </div>
       </div>
             <ul class="ul-imagen">
+                <li class="li-imagen"><img src = "{!! asset('images/car3.jpg') !!}"></li>
                 <li class="li-imagen"><img src = "{!! asset('images/car1.jpg') !!}"></li>
                 <li class="li-imagen"><img src = "{!! asset('images/car2.jpg') !!}"></li>
-                <li class="li-imagen"><img src = "{!! asset('images/car1.jpg') !!}"></li>
                 <li class="li-imagen"><img src = "{!! asset('images/car2.jpg') !!}"></li>
                 <li class="li-imagen"><img src = "{!! asset('images/car1.jpg') !!}"></li>
             </ul>
