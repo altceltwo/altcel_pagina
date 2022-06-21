@@ -8,7 +8,7 @@
   
   <!-- Page Title
   ============================================= -->
-  <section style=" margin-top: 30px" id="content">
+  <section id="content">
     <section id="page-title" class="page-title-center paquetes" style="margin-top: 30px">
 
       <div class="container clearfix">

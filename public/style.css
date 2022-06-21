@@ -10752,12 +10752,25 @@ body:not(.no-transition) #wrapper,
 	color: #BBB;
 }
 
+@-moz-document url-prefix(){
+	.img-paquetes{
+	  margin-left: 57rem;
+	  margin-top: -36rem;
+	  height: 42rem;
+	  width: 88rem;
+	  -moz-transform: rotate(18deg);
+	  margin-bottom: -3rem;
+	
+	}
+}
+
+
 .img-paquetes{
   margin-left: 57rem;
   margin-top: -36rem;
-  height: 42rem;
-  width: 88rem;
-  -moz-transform: rotate(18deg);
+  height: 45rem;
+  width: 99rem;
+  transform: rotate(25dep);
   margin-bottom: -3rem;
 
 }
@@ -11461,7 +11474,7 @@ nav .indicador {
  nav ul{
 	/* float: right; */
     /* margin-left: 82rem; */
-	margin-left: 77rem;
+	margin-left: 73rem;
 	margin-top: 2rem;
  }
  nav ul li{
