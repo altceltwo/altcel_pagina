@@ -79,7 +79,7 @@
 
 
 
-
+	<script src="//cdnjs.cloudflare.com/ajax/libs/imask/3.4.0/imask.min.js"></script>
 
 </head>
 
@@ -142,21 +142,21 @@
 			<nav>
 				<input type="checkbox" id="check">
 				<label for="check" class="checkbtn">
-				    <i class="icon-reorder"></i>
+					<i class="icon-reorder"></i>
 				</label>
 				<a href="#" class="enlace">
-				    <img class="logoA" src="{!! asset('images/Logotipo-01.png') !!}" alt="Altcel">
+					<img class="logoA" src="{!! asset('images/Logotipo-01.png') !!}" alt="Altcel">
 				</a>
 				{{-- <a href="{!! URL::to('/') !!}" class=""><img class="logoA" src="{!! asset('images/Logotipo-01.png') !!}" alt="Altcel"></a> --}}
 				<ul>
-				    <li><a href="{!! URL::to('/') !!}">Inicio</a></li>
-				    <li><a href="{!! URL::to('recargas') !!}">Recargas</a></li>
-				    <li><a href="{!! URL::to('quienesomos') !!}">Nosotros</a></li>
-				    <li><a href="{!! URL::to('planes') !!}">Servicios</a></li>
-				    <li><a href="{!! URL::to('soporte') !!}">Soporte</a></li>
+					<li><a href="{!! URL::to('/') !!}">Inicio</a></li>
+					<li><a href="{!! URL::to('recargas') !!}">Recargas</a></li>
+					<li><a href="{!! URL::to('quienesomos') !!}">Nosotros</a></li>
+					<li><a href="{!! URL::to('planes') !!}">Servicios</a></li>
+					<li><a href="{!! URL::to('soporte') !!}">Soporte</a></li>
 				</ul>
-			 </nav>
-			 <section class="menu2nav"></section>
+			</nav> 
+			{{-- <section class="menu2nav"></section> --}}
 
 		</header><!-- #header end -->
 		
@@ -167,7 +167,7 @@
 	<img src="{!! asset('images/WhatsApp.png') !!}" width="50" height="50">
   </a> --}}
     <!-- Footer============================================= -->
-    <footer id="footer-redes" style="display: flex; margin-top: 8rem">
+    {{-- <footer id="footer-redes" style="display: flex; margin-top: 8rem">
 	    <div class="col_full center">
 		    <div >
 			    <div class="row" style="align-content: center">
@@ -179,7 +179,7 @@
 			    </div>
 		    </div>
 	    </div>
-    </footer>
+    </footer> --}}
 
     <!-- Footer
         ============================================= -->

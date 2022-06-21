@@ -33,7 +33,7 @@
     <div class="content-wrap">
       <hr id="visionmisionhr">
       <div class=" divMision">
-        <p style="font-size: 15px">Una <span class="spanSomos">misión</span> nunca podrá cumplirse <br> si no se tiene un <span class="spanSomos">visión...</span></p>
+        <p style="font-size: 15px">Una <span class="spanSomos">misión</span> nunca podrá cumplirse <br><span class="leyendaMV" style="text-align: center"> si no se tiene un <span class="spanSomos">visión...</span></span></p>
       </div>
       <hr id="visionmisionhr2">
 
@@ -45,7 +45,7 @@
         <div id="mision">
           <h4 class="h4VisiMis">Misión</h4>
           <hr id="hrmision"><hr id="hrmision2">
-          <p id="pMision">Ser unreferente en el sector de telecomunicaciones, brindando a nuestros clientes la mejor conexión y calidad en nuestros servicios.</p>
+          <p id="pMision">Ser un referente en el sector de telecomunicaciones, brindando a nuestros clientes la mejor conexión y calidad en nuestros servicios.</p>
         </div>
       </div>
     </div>
@@ -71,10 +71,16 @@
         <p>¿Te quedaste sin saldo? Consulta tu <br> plan favorito y <strong>recarga desde $10.00</strong></p>
         <button class="btn btnsomos"><a href="https://api.whatsapp.com/send?phone=525612010013&app=facebook&entry_point=page_cta">Recarga</a></button>
         
-        <img src="{!! asset('images/2.png') !!}" class="img-soporte" alt="" >
+        <img src="{!! asset('images/animatedSomos.png') !!}" class="img-somosBanner" alt="" >
       </div>
     
     </section><!-- #page-title end -->
+    <div class="row">
+    </div>
+    <div class="row">
+      <img class="destellosSomos2" src="{!! asset('images/Degradado-2.png') !!}" alt="">
+      <img class="destellosSomos1" src="{!! asset('images/Degradado-1.png') !!}" alt="">
+    </div>
   </section>
 
 @stop
