@@ -15,7 +15,8 @@
         <div class="col-md-6">
           <p class="text-package">Conoce nuestros paquetes, elige el que mejor se adecué a tus necesidades y <strong class="recarPackage">recarga en línea</strong>.</p>
           <p class="fraseAltcelPackage">¡Altcel te acompaña!</p>
-          <button class="btn btn-info">¡Conócelos!</button>
+          <a href="#cardsPlanes" class="btn btnConocelos">¡Conócelos!</a href="#">
+
         </div>
       </div>
       <img  src="{!! asset('images/Sintítulo2.png') !!}" alt="img-celular" class="img-paquetes">
@@ -26,7 +27,7 @@
       <div class="container clearfix">
         <div class="col_full">
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12" id="cardsPlanes">
               <div class="col-md-3">
                 <div class="card mito" style="width: 18rem;">
                   <div class="card-body color-tar cent-mt">
@@ -145,10 +146,9 @@
     <section id="page-title" class="page-title-left paquete" style="margin-top: 30px">
 
       <div class="container clearfix">
-        {{-- <img src="{!! asset('images/3.png') !!}" class="img-paquete" alt="" > --}}
-        <p>Recuerda <br>
-        <strong style="color: rgb(194, 40, 40)">Haz tus propias recargas</strong><br>
-        en tiendas <strong style="color: white">OXXO, </strong><br>Farmacias de <strong style="color: white">Ahorro</strong> <br>y muchos puntos más.</p>
+        <p class="eresAlt">¿Eresl Altcel?</p>
+        <hr id="hrPlanes2"><hr id="hrplanes">
+        <p class="marcarCall">Marca <strong>*282</strong> <br>Call Center al: 800 225 8235</p>
       </div>
   </section>
   
