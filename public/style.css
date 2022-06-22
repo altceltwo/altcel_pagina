@@ -11016,7 +11016,10 @@ body:not(.no-transition) #wrapper,
 	    
    }
    #btnIndex{
-	   margin-left: 8rem;
+	   margin-left: 5rem!important;
+   }
+   .pindex{
+	margin-left: 5rem;
    }
 
    .btnIndexOpt{
@@ -11099,6 +11102,12 @@ body:not(.no-transition) #wrapper,
 	padding: 6px 72px; 
 	font-size: 17px; 
 	margin-left: 58rem;
+   }
+   #recargar{
+	align-content: center!important; 
+	padding: 6px 72px; 
+	font-size: 17px; 
+	margin-left: 37rem;
    }
 
    .icon-paquetes{
@@ -11519,7 +11528,7 @@ nav .indicador {
 	height: 40px;
  }
  .nav_li_a{
-	color: #000;
+	color: #000!important;
  }
  nav ul{
 	/* float: right; */
@@ -11549,6 +11558,7 @@ nav .indicador {
  li a.active, li a:hover{
 	background: #ffffff;
 	transition: .5s;
+	color: red!important;
  }
  .checkbtn{
 	font-size: 30px;
@@ -11856,4 +11866,13 @@ color: white;
 	margin-top: -2rem;
 	background-color: #666666;
 	color: white;
+ }
+
+ .cardRecarga{
+	border-radius: 10px;
+	border: #7f71ea 1px solid;
+	width: 97rem;
+	margin-left: 18rem;
+	margin-bottom: 3rem;
+	height: 32rem;
  }
