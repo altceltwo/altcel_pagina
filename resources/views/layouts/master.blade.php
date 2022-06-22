@@ -138,7 +138,6 @@
 				</div>
 
 			</div> --}}
-
 			<nav class="{{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_bar' : ''}}">
 				<input type="checkbox" id="check">
 				<label for="check" class="checkbtn">
@@ -146,14 +145,16 @@
 				</label>
 				<a href="#" class="enlace">
 				    <img class="logoA {{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'img_logo' : ''}}" src="{!! asset('images/Logotipo-01.png') !!}" alt="Altcel">
+					<div class="logoE"></div>
+				    <!-- <img class="sustituida {{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'img_logo' : ''}}" src="{!! asset('images/logo-rojo.png') !!}" alt="Altcel"> -->
 				</a>
 				{{-- <a href="{!! URL::to('/') !!}" class=""><img class="logoA" src="{!! asset('images/Logotipo-01.png') !!}" alt="Altcel"></a> --}}
 				<ul>
-				    <li class="animate__animated animate__backInLeft {{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_li' : ''}}"><a href="{!! URL::to('/') !!}">Inicio</a></li>
-				    <li class="animate__animated animate__backInLeft {{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_li' : ''}}"><a id="test" href="{!! URL::to('recargas') !!}" onclick="myFun()">Recargas</a></li>
-				    <li class="animate__animated animate__backInLeft {{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_li' : ''}}"><a href="{!! URL::to('quienesomos') !!}">Nosotros</a></li>
-				    <li class="animate__animated animate__backInLeft {{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_li' : ''}}"><a href="{!! URL::to('planes') !!}">Servicios</a></li>
-				    <li class="animate__animated animate__backInLeft {{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_li' : ''}}"><a href="{!! URL::to('soporte') !!}">Soporte</a></li>
+				    <li class="animate__animated animate__backInLeft {{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_li' : ''}}"><a class="{{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_li_a' : ''}}" href="{!! URL::to('/') !!}">Inicio</a></li>
+				    <li class="animate__animated animate__backInLeft {{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_li' : ''}}"><a class="{{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_li_a' : ''}}" id="test" href="{!! URL::to('recargas') !!}" onclick="myFun()">Recargas</a></li>
+				    <li class="animate__animated animate__backInLeft {{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_li' : ''}}"><a class="{{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_li_a' : ''}}" href="{!! URL::to('quienesomos') !!}">Nosotros</a></li>
+				    <li class="animate__animated animate__backInLeft {{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_li' : ''}}"><a class="{{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_li_a' : ''}}" href="{!! URL::to('planes') !!}">Servicios</a></li>
+				    <li class="animate__animated animate__backInLeft {{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_li' : ''}}"><a class="{{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_li_a' : ''}}" href="{!! URL::to('soporte') !!}">Soporte</a></li>
 				</ul>
 			</nav> 
 			{{-- <section class="menu2nav"></section> --}}
