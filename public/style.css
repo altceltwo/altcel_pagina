@@ -119,7 +119,7 @@ dl, dt, dd, ol, ul, li {
 	Typography
 -----------------------------------------------------------------*/
 .btnprincipal1{
-	argin-right: 1.5rem;
+    margin-right: 1.5rem;
     margin-left: -0.3rem;
     font-size: 18px!important;
     background-color: red;
@@ -10670,6 +10670,19 @@ body:not(.no-transition) #wrapper,
 	width: 17%;
 	margin-left: 0rem;
 }
+#hrPlanes2{
+	border: 3px solid red;
+	margin-top: -2.8rem;
+	width: 5%;
+	margin-left: 11.5rem;
+}
+
+#hrplanes{
+	border: 1px solid white;
+	margin-top: -2.4rem;
+	width: 10%;
+	margin-left: 0rem;
+}
 #hrvision{
 	border: 1px solid black;
 	margin-top: -2rem;
@@ -10779,7 +10792,7 @@ body:not(.no-transition) #wrapper,
 } */
 
 #page-title.page-title-left.paquete p{
-	font-size: 18px!important;
+	font-size: 18px;
 	margin-top: -24rem;
 	margin-left: 60rem;
 	color: #BBB;
@@ -10799,17 +10812,17 @@ body:not(.no-transition) #wrapper,
 
 
 .img-paquetes{
-  margin-left: 57rem;
-  margin-top: -36rem;
-  height: 46rem;
-  width: 100rem;
-  -webkit-transform: rotate(24deg);
+	margin-left: 53rem;
+	margin-top: -49rem;
+	height: 46rem;
+	width: 105rem;
+	-webkit-transform: rotate(12deg);
   margin-bottom: -3rem;
 
 }
 .img-socialNetwork{
-	margin-left: 44rem;
-	margin-top: -9rem;
+	margin-left: 26rem;
+	margin-top: -13rem;
 	height: 25rem;
 	width: 45rem;
 }
@@ -11003,7 +11016,10 @@ body:not(.no-transition) #wrapper,
 	    
    }
    #btnIndex{
-	   margin-left: 8rem;
+	   margin-left: 5rem!important;
+   }
+   .pindex{
+	margin-left: 5rem;
    }
 
    .btnIndexOpt{
@@ -11086,6 +11102,12 @@ body:not(.no-transition) #wrapper,
 	padding: 6px 72px; 
 	font-size: 17px; 
 	margin-left: 58rem;
+   }
+   #recargar{
+	align-content: center!important; 
+	padding: 6px 72px; 
+	font-size: 17px; 
+	margin-left: 37rem;
    }
 
    .icon-paquetes{
@@ -11506,7 +11528,7 @@ nav .indicador {
 	height: 40px;
  }
  .nav_li_a{
-	color: #000;
+	color: #000!important;
  }
  nav ul{
 	/* float: right; */
@@ -11527,7 +11549,7 @@ nav .indicador {
 	margin-top: 0rem;
  }
  nav ul li a{
-	color: #fff;
+	color: white!important;
 	font-size: 18px;
 	padding: 7px 13px;
 	border-radius: 3px;
@@ -11536,7 +11558,11 @@ nav .indicador {
  li a.active, li a:hover{
 	background: #ffffff;
 	transition: .5s;
+<<<<<<< HEAD
 	color: red;
+=======
+	color: red!important;
+>>>>>>> 92b369568167d12b3f5b0f0490e2b04314bae2c3
  }
  .checkbtn{
 	font-size: 30px;
@@ -11750,7 +11776,7 @@ color: white;
 	color: #0a2153;
 	text-align: center;
 	margin-top: 4.5rem!important;
-	margin-left: -6rem;
+	margin-left: -7rem;
 	margin-bottom: 3rem;
 	font-size: 1rem;
 	transition-duration: 500ms;
@@ -11811,8 +11837,8 @@ color: white;
  }
 
  .text-package{
-	font-size: medium;
-	justify-content: left;
+	font-size: 27px !important;
+	text-align: initial;
  }
 
  .recarPackage{
@@ -11822,6 +11848,35 @@ color: white;
  .fraseAltcelPackage{
 	margin-top: -2rem;
 	justify-content: left;
-	margin-left: -18rem;
-	font-size: 12px;
+	margin-left: -21rem;
+	font-size: 16px;
+ }
+
+ .marcarCall{
+	margin-top: 1rem!important;
+	margin-left: -1rem!important;
+	font-size: 25px!important;
+
+ }
+
+ .eresAlt{
+	margin-top: 2rem!important;
+	margin-left: -1rem!important;
+	font-size: 25px!important;
+ }
+
+ .btnConocelos{
+	margin-left: -27rem;
+	margin-top: -2rem;
+	background-color: #666666;
+	color: white;
+ }
+
+ .cardRecarga{
+	border-radius: 10px;
+	border: #7f71ea 1px solid;
+	width: 97rem;
+	margin-left: 18rem;
+	margin-bottom: 3rem;
+	height: 32rem;
  }

@@ -1,18 +1,18 @@
 <?php
-echo $role = "danger";
-echo $tel = $_POST['telefono'];
-echo $qty = $_POST['monto'];
-$diahora = date('d/m/Y H:i:s');
-echo $TransNumber = rand ( 1 , 99999 );
-$DescripcionCode = "";
-echo $DateTime = $diahora;
-echo $AutoNo = 0;
-echo $Instr1 = "Su tarjeta no ha sido afectada con ningun cargo.";
-echo $Instr2 = "";
-return false;
+// echo $role = "danger";
+// echo $tel = $_POST['telefono'];
+// echo $qty = $_POST['monto'];
+// $diahora = date('d/m/Y H:i:s');
+// echo $TransNumber = rand ( 1 , 99999 );
+// $DescripcionCode = "";
+// echo $DateTime = $diahora;
+// echo $AutoNo = 0;
+// echo $Instr1 = "Su tarjeta no ha sido afectada con ningun cargo.";
+// echo $Instr2 = "";
+// return false;
   require_once '../vendor/autoload.php';
 
-require('openpay/Openpay.php');
+require('../vendor/openpay/sdk/Openpay.php');
 
 
 //sandbox
