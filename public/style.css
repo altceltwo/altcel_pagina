@@ -11536,6 +11536,7 @@ nav .indicador {
  li a.active, li a:hover{
 	background: #ffffff;
 	transition: .5s;
+	color: red;
  }
  .checkbtn{
 	font-size: 30px;
