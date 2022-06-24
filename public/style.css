@@ -10720,7 +10720,8 @@ body:not(.no-transition) #wrapper,
 	/* background-attachment: fixed; */
 	background-size: cover;
 	background-position: center;
-	height: 16rem;
+	/* height: 16rem; */
+	height: 32rem;
 	margin-bottom: 4rem;
 }
 
@@ -11874,6 +11875,28 @@ body:not(.no-transition) #wrapper,
 		display: block;
 		z-index: 1;
 	}
+	#hrPlanes2 {
+		border: 3px solid red;
+		margin-top: -2.8rem;
+		width: 5%;
+		margin-left: 17.5rem;
+	  }
+	  #hrplanes {
+		border: 1px solid white;
+		margin-top: -2.4rem;
+		width: 10%;
+		margin-left: 6rem;
+	  }
+	  .eresAlt {
+		margin-top: 6rem !important;
+		margin-left: 5rem !important;
+		font-size: 32px !important;
+	  }
+	  .marcarCall {
+		margin-top: 1rem !important;
+		margin-left: 5rem !important;
+		font-size: 33px !important;
+	  }
 
 	.img-barra1 {
 		width: 34rem !important;
@@ -11913,6 +11936,9 @@ body:not(.no-transition) #wrapper,
 	  }
 	.container__footer {
 		margin-right: 0rem !important;
+	  }
+	  .container {
+		margin-left: -3rem;
 	  }
 }
 
@@ -11994,7 +12020,31 @@ body:not(.no-transition) #wrapper,
 		margin-top: -4rem!important;
 		width: 35rem!important;
 	}
-
+	.marcarCall{
+		margin-top: 1rem!important;
+		margin-left: -1rem!important;
+		font-size: 33px!important;
+	
+	 }
+	
+	 .eresAlt{
+		margin-top: 6rem!important;
+		margin-left: -1rem!important;
+		font-size: 32px!important;
+	 }
+	 #hrPlanes2{
+		border: 3px solid red;
+		margin-top: -2.8rem;
+		width: 5%;
+		margin-left: 11.5rem;
+	}
+ 
+	#hrplanes{
+		border: 1px solid white;
+		margin-top: -2.4rem;
+		width: 10%;
+		margin-left: 0rem;
+	}
 	.img-cel__recarg {
 		width: 34rem !important;
 		position: absolute !important;
@@ -12041,6 +12091,9 @@ body:not(.no-transition) #wrapper,
 	}
 	.container__footer {
 		margin-right: 0rem !important;
+	}
+	.container {
+		margin-left: 6rem;
 	  }
 }
 
@@ -12086,7 +12139,31 @@ body:not(.no-transition) #wrapper,
 	.nav__enlaces {
 		margin-left: 73rem !important;
 	}
-
+	.marcarCall{
+		margin-top: 1rem!important;
+		margin-left: -1rem!important;
+		font-size: 33px!important;
+	
+	 }
+	
+	 .eresAlt{
+		margin-top: 6rem!important;
+		margin-left: -1rem!important;
+		font-size: 32px!important;
+	 }
+	 #hrPlanes2{
+		border: 3px solid red;
+		margin-top: -2.8rem;
+		width: 5%;
+		margin-left: 11.5rem;
+	}
+ 
+	#hrplanes{
+		border: 1px solid white;
+		margin-top: -2.4rem;
+		width: 10%;
+		margin-left: 0rem;
+	}
 	.fiel_nombre {
 		border-color: #ecb81880!important;
 		border-radius: 16px!important;
@@ -12095,7 +12172,9 @@ body:not(.no-transition) #wrapper,
 		margin-right: -7rem!important;
 		border: 1.5px solid #7f71ea69!important;
 	}
-
+	.container {
+		margin-left: 8.5rem;
+	}
 	.input-dis {
 		border: none!important;
 		padding-left: 1rem!important;
@@ -12206,6 +12285,11 @@ body:not(.no-transition) #wrapper,
 		/* margin-left: 82rem; */
 		margin-left: 73rem!important;
 		margin-top: 2rem!important;
+	}
+	@-moz-document url-prefix() {
+		.btn-recar {
+			margin-left: -10.4rem!important;
+		}
 	}
 	.camp_a {
 		margin-right: 6%!important;
@@ -12725,12 +12809,12 @@ color: white;
  }
  .btn-recar{
 	/* margin-top: 15.1rem; */
-	margin-top: 6.3rem;
-	margin-left: -9.2rem;
-	/* margin-left: 17rem; */
-	position: absolute;
-	color: white;
-	font-size: 1rem;
+	margin-top: 7.3rem;
+	margin-left: -10rem;
+    /* margin-left: 17rem; */
+    position: absolute;
+    color: white;
+    font-size: 1.3rem;
 	text-decoration: none!important;
 	background-color: transparent!important;
  }
@@ -12774,15 +12858,15 @@ color: white;
 
  .marcarCall{
 	margin-top: 1rem!important;
-	margin-left: -1rem!important;
-	font-size: 25px!important;
+	margin-left: -1rem;
+	font-size: 33px!important;
 
  }
 
  .eresAlt{
-	margin-top: 2rem!important;
-	margin-left: -1rem!important;
-	font-size: 25px!important;
+	margin-top: 6rem!important;
+	margin-left: -1rem;
+	font-size: 32px!important;
  }
 
  .btnConocelos{
