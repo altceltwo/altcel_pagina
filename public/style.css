@@ -10906,10 +10906,11 @@ body:not(.no-transition) #wrapper,
 	background: #1abc9c;
  } */
  /*Fin Acordeon8*/
-.logoA{
-	height: 63px;
+ .logoA {
+	height: 78px;
 	margin-top: -4.5rem;
-}
+	width: 20rem !important;
+  }
  
 .img_logo{
 	height: 63px;
@@ -11316,20 +11317,33 @@ body:not(.no-transition) #wrapper,
 		opacity: 0.8;
 	}
 	#page-title.page-title-center.paquetes p{
-		font-size: 21px!important;
+		font-size: 30px!important;
 	}
 	.img-paquetes{
-		margin-left: 103rem;
-		margin-top: -31rem;
-		height: 46rem;
-		width: 44rem;
+		margin-left: 100rem;
+		margin-top: -45rem;
+		height: 50rem;
+		width: 102rem;
 	}
+	.container {
+		margin-left: 32.5rem!important;
+	  }
 	.img-des{
 		margin-left: 113rem;
 		margin-top: -63rem;
 		height: 50rem;
 		width: 48rem;
 	}
+	.img-socialNetwork {
+		margin-left: 37rem;
+		margin-top: -13rem;
+		height: 33rem;
+		width: 60rem;
+	}
+	.col-md-6 {
+		width: 63%;
+		margin-left: -12rem;
+	  }
 	.diasDiez{
 		margin-left: 101rem;
 		margin-top: 40rem;
@@ -11375,12 +11389,19 @@ body:not(.no-transition) #wrapper,
 	/*Media Query Lalo*/
 	.nav__enlaces{
 		margin-left: 32rem !important;
-		height: 40vh;
+		height: 22vh;
 		opacity: 0.9;
 		margin-top: -1.8rem;
 		border-radius: 1rem;
+		width: auto;
 	}
-	.logoE{
+	.logoA {
+		height: 78px;
+		margin-top: -1.5rem;
+		width: 20rem !important;
+		margin-left: -4rem;
+	  }
+	/* .logoE{
 		height: 95px;
 		width: 166%;
 		margin-left: 3rem;
@@ -11394,10 +11415,10 @@ body:not(.no-transition) #wrapper,
 		float: left;
 		left: 50%;
 		padding-top: 0px;
-	  }
-	.logoA{
+	  } */
+	/* .logoA{
 		display: none;
-	}
+	} */
 	nav ul {
 		margin-left: 32rem!important;
 		margin-top: 2rem;
@@ -11537,7 +11558,14 @@ body:not(.no-transition) #wrapper,
 		opacity: 0.9;
 		margin-top: -1.8rem;
 		border-radius: 1rem;
+		width: auto;
 		}
+		.logoA {
+			height: 78px;
+			margin-top: -1.5rem;
+			width: 20rem !important;
+			margin-left: 3rem;
+		  }
 	  .text-recarg {
 		margin-left: 1rem !important;
 	  }
@@ -11585,9 +11613,9 @@ body:not(.no-transition) #wrapper,
 		margin-left: -10rem;
 		height: 3rem !important;
 	  }
-	  .logoE {
+	  /* .logoE {
 		margin-left: 6.5rem;
-	  }
+	  } */
 	  .text__contac{
 		margin-left: -8rem;
 	  }
@@ -11775,7 +11803,14 @@ body:not(.no-transition) #wrapper,
 	.img-fon {
 		height: 60rem!important;
 	}
-
+	.logoA {
+		height: 78px;
+		margin-top: -4.5rem;
+		width: 24rem !important;
+	  }
+	  .img_logo{
+		margin-top: -2.5rem;
+	  }
 	nav ul {
 		/* float: right; */
 		/* margin-left: 82rem; */
@@ -11897,7 +11932,14 @@ body:not(.no-transition) #wrapper,
 	.img-fon {
 		height: 60rem!important;
 	}
-
+	.logoA {
+		height: 78px;
+		margin-top: -4.5rem;
+		width: 24rem !important;
+	  }
+	  .img_logo{
+		margin-top: -2.5rem;
+	  }
 	nav ul {
 		/* float: right; */
 		/* margin-left: 82rem; */
@@ -11914,7 +11956,7 @@ body:not(.no-transition) #wrapper,
 		margin-left: 0rem !important;
 	}
 	.nav__enlaces {
-		margin-left: 55rem !important;
+		margin-left: 73rem !important;
 	}
 
 	.fiel_nombre {
@@ -12018,7 +12060,14 @@ body:not(.no-transition) #wrapper,
 	.img-fon {
 		height: 60rem!important;
 	}
-
+	.logoA {
+		height: 78px;
+		margin-top: -4.5rem;
+		width: 24rem !important;
+	  }
+	  .img_logo{
+		margin-top: -2.5rem;
+	  }
 	nav ul {
 		/* float: right; */
 		/* margin-left: 82rem; */
@@ -12144,7 +12193,14 @@ body:not(.no-transition) #wrapper,
 	.img-fon {
 		height: 60rem!important;
 	}
-
+	.logoA {
+		height: 78px;
+		margin-top: -4.5rem;
+		width: 24rem !important;
+	  }
+	  .img_logo{
+		margin-top: -2.5rem;
+	  }
 	nav ul {
 		/* float: right; */
 		/* margin-left: 82rem; */
@@ -12244,7 +12300,7 @@ body:not(.no-transition) #wrapper,
 	}
 
 	.mov-contactanos {
-		margin-left: -40rem!important;
+		margin-left: 0rem!important;
 		margin-top: 0rem!important;
 	}
 	.mov-direcc {
@@ -12255,7 +12311,7 @@ body:not(.no-transition) #wrapper,
 		margin-top: -50px!important;
 	}
 	.mov-redes_soc {
-		margin-left: 53rem!important;
+		margin-left: 98rem !important;
 		margin-top: -50px!important;
 	}
 }
