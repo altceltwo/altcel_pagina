@@ -33,7 +33,7 @@
       
     <div class="slider">
     <div class="col_one_third slider__informa " id="indexp">
-            <p class="text-justify animate__animated animate__pulse animate__infinite color-text pindex">
+            <p class="text-justify animate__animated animate__pulse animate__infinite color-text ">
               ¡Disfruta <strong>al máximo</strong> de todos los beneficios de cambiarte a Altcel!
             </p>
             <div class="row" id="btnIndex">

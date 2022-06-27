@@ -321,14 +321,14 @@ button.disabled {
         $(document).ready(function() {
 
             //PRUEBAS
-            OpenPay.setId('mknobtk1h9tlibxadf7s');
-            OpenPay.setApiKey('pk_dfce2ef1be134a86833ab7e67daae68d');
-            OpenPay.setSandboxMode(true);
+            // OpenPay.setId('mknobtk1h9tlibxadf7s');
+            // OpenPay.setApiKey('pk_dfce2ef1be134a86833ab7e67daae68d');
+            // OpenPay.setSandboxMode(true);
 
             //PRODUCCION
-            // OpenPay.setId('mx6hwd1zsacnw4mqbpca');
-            // OpenPay.setApiKey('pk_9e1695ae3b334a4d885cd5cda25d9513');
-            // OpenPay.setSandboxMode(false);
+            OpenPay.setId('mx6hwd1zsacnw4mqbpca');
+            OpenPay.setApiKey('pk_9e1695ae3b334a4d885cd5cda25d9513');
+            OpenPay.setSandboxMode(false);
 
 
             //Se genera el id de dispositivo
@@ -351,6 +351,8 @@ button.disabled {
             };
 
             var error_callbak = function(response) {
+                console.log(response)
+                return false;
                 var desc = response.data.description != undefined ? response.data.description : response.message;
                 alert("ERROR [" + response.status + "] " + desc);
                 $("#pay-button").prop("disabled", false);
