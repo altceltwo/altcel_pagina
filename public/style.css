@@ -215,7 +215,7 @@ a {
 }
 
 a:hover {
-	color: #fc2e2e; }
+	color: #fc2e2e!important; }
 
 /* .soportew a:hover{color: #fc2e2e;} */
 
@@ -13272,8 +13272,7 @@ nav .indicador {
 	text-transform: uppercase;
  }
  li a.active, li a:hover{
-	/* background: #ffffff; */
-	background: red;
+	background: #ffffff;
 	transition: .5s;
  }
  .checkbtn{
