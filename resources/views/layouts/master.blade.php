@@ -118,11 +118,11 @@
 	<div id="wrapper" class="clearfix">
 
 		<!-- Header============================================= -->
-		<header id="header" class=" transparent-header" data-sticky-class="not-dark">
+		<header id="header" class=" transparent-header {{(request() -> is ('/*') ) ? 'header__carru' : ''}}" data-sticky-class="not-dark">
 
 
 
-			<nav class="{{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_bar' : ''}}">
+			<nav class="nav__color {{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_bar' : ''}}">
 				<!-- <input type="checkbox" class="mobile-menu" id="mobile-menu"> -->
 				<input type="checkbox" id="check">
 				<label for="check" class="checkbtn">

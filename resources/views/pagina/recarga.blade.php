@@ -28,23 +28,37 @@
                          
                          <!-- <label for="register-form-email">Nombre completo:</label> -->
                          <fieldset class="fiel_nombre">
-                         <legend class="nombre_titular"><i class="fas fa-user"></i>Nombre:</legend>
-                              <input id="nombre" type="text" placeholder="Su nombre" value="" class="form-control input-dis"/>
+                         <legend class="nombre_titular"><i class="fa-solid fa-mobile"></i>Teléfono:</legend>
+                              <input id="phone" name="phone" type="text" placeholder="Su teléfono" value="" class="form-control input-dis" />
                          </fieldset>
                     </div>
                     <div class="col_half col_last mov_correo">
                               <!-- <label for="register-form-username">Correo electrónico:</label> -->
                               <fieldset class="fiel_nombre">
-                              <legend class="email_titular"><i class="fa-solid fa-at"></i>Correo electrónico:</legend>
-                              <input id="correo" type="email" placeholder="Su correo" value="" class="form-control input-dis"/>
+                                   <legend class="tel_conf_titular"><i class="fa-solid fa-check-double"></i>Confirmar su Teléfono:</legend>
+                                   <input id="phone2" type="text"   placeholder="Confirmar su teléfono" value="" class="form-control input-dis" />
                               </fieldset>
                          </div>
           
                          <div class="col_half col_last camp_b">
                               <!-- <label for="register-form-name">Teléfono:</label> -->
                               <fieldset class="fiel_nombre">
-                              <legend class="nombre_titular"><i class="fa-solid fa-mobile"></i>Teléfono:</legend>
-                              <input id="phone" name="phone" type="text" placeholder="Su teléfono" value="" class="form-control input-dis" />
+                                   <legend class="nombre_titular"><i class="fa-solid fa-sack-dollar"></i>Monto:</legend>
+                                   <select id="monto" class="form-control input-dis ">
+                                        <option selected>Monto...</option>
+                                        <option value="50">$ 50</option>
+                                        <option value="60">$ 60</option>
+                                        <option value="69">$ 69</option>
+                                        <option value="80">$ 80</option>
+                                        <option value="99">$ 99</option>
+                                        <option value="100">$ 100</option>
+                                        <option value="199">$ 199</option>
+                                        <option value="200">$ 200</option>
+                                        <option value="299">$ 299</option>
+                                        <option value="300">$ 300</option>
+                                        <option value="499">$ 499</option>
+                                        <option value="500">$ 500</option>
+                                   </select>
                               </fieldset>
                          </div>
                     <div class="clear"></div>
@@ -53,31 +67,16 @@
                          <div class="col_half mov_conf__tel">
                               <!-- <label for="register-form-name">Confirmar su Teléfono:</label> -->
                               <fieldset class="fiel_nombre mov_conf__tel">
-                                   <legend class="tel_conf_titular"><i class="fa-solid fa-check-double"></i>Confirmar su Teléfono:</legend>
-                                   <input id="phone2" type="text"   placeholder="Confirmar su teléfono" value="" class="form-control input-dis" />
+                              <legend class="email_titular"><i class="fa-solid fa-at"></i>Correo electrónico:</legend>
+                              <input id="correo" type="email" placeholder="Su correo" value="" class="form-control input-dis"/>
                               </fieldset>
                          </div>
           
                          <div class="col_half camp_c mov_monto">
                               <!-- <label for="register-form-name">Monto:</label> -->
                               <fieldset class="fiel_nombre">
-                              <legend class="nombre_titular"><i class="fa-solid fa-sack-dollar"></i>Monto:</legend>
-                              
-                              <select id="monto" class="form-control input-dis ">
-                                   <option selected>Monto...</option>
-                                   <option value="50">$ 50</option>
-                                   <option value="60">$ 60</option>
-                                   <option value="69">$ 69</option>
-                                   <option value="80">$ 80</option>
-                                   <option value="99">$ 99</option>
-                                   <option value="100">$ 100</option>
-                                   <option value="199">$ 199</option>
-                                   <option value="200">$ 200</option>
-                                   <option value="299">$ 299</option>
-                                   <option value="300">$ 300</option>
-                                   <option value="499">$ 499</option>
-                                   <option value="500">$ 500</option>
-                              </select>
+                                   <legend class="nombre_titular"><i class="fas fa-user"></i>Nombre:</legend>
+                                   <input id="nombre" type="text" placeholder="Su nombre" value="" class="form-control input-dis"/>
                               </fieldset>
                          </div>
           
