@@ -302,7 +302,7 @@ button.disabled {
                                     <div class="sctn-col half l"><input type="text" placeholder="Año" data-openpay-card="expiration_year" maxlength="2"></div>
                                 </div>
                                 <div class="sctn-col cvv"><label>Código de seguridad</label>
-                                    <div class="sctn-col half l"><input type="text" placeholder="3 dígitos" autocomplete="off" data-openpay-card="cvv2" maxlength="4"></div>
+                                    <div class="sctn-col half l"><input type="password" placeholder="3 dígitos" autocomplete="off" data-openpay-card="cvv2" maxlength="4"></div>
                                 </div>
                             </div>
                             <div class="openpay"><div class="logo">Transacciones realizadas vía:</div>
@@ -321,8 +321,8 @@ button.disabled {
         $(document).ready(function() {
 
             //PRUEBAS
-            // OpenPay.setId('mknobtk1h9tlibxadf7s');
-            // OpenPay.setApiKey('pk_dfce2ef1be134a86833ab7e67daae68d');
+            // OpenPay.setId('mvtmmoafnxul8oizkhju');
+            // OpenPay.setApiKey('pk_c5895fc98ace490a9372ca883e01354d');
             // OpenPay.setSandboxMode(true);
 
             //PRODUCCION
@@ -352,7 +352,6 @@ button.disabled {
 
             var error_callbak = function(response) {
                 console.log(response)
-                return false;
                 var desc = response.data.description != undefined ? response.data.description : response.message;
                 alert("ERROR [" + response.status + "] " + desc);
                 $("#pay-button").prop("disabled", false);

@@ -17,6 +17,7 @@
     {{-- @include('meta::manager') --}}
 
     <link rel="shortcut icon" href="{{ asset('images/favicon.ico') }}">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 	<!-- Stylesheets
 	============================================= -->
@@ -24,6 +25,8 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+
+
 	<link rel="preconnect" href="https://fonts.googleapis.com"> 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet"> 
@@ -82,6 +85,10 @@
 
 	<script src="//cdnjs.cloudflare.com/ajax/libs/imask/3.4.0/imask.min.js"></script>
 
+
+	<!-- <script type='text/javascript' src='http://code.jquery.com/jquery-1.11.0.js'></script>
+  <script type='text/javascript' src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script> -->
+
 </head>
 
 <body class="stretched no-transition" data-loader="7" data-loader-color="#AB0A0A" data-loader-Html="<img src='images/loader_gif.gif' alt='Loader'>" data-animation-in="fadeIn" data-speed-in="1500" data-animation-out="fadeOut" data-speed-out="800">
@@ -111,34 +118,12 @@
 	<div id="wrapper" class="clearfix">
 
 		<!-- Header============================================= -->
-		<header id="header" class=" transparent-header" data-sticky-class="not-dark">
+		<header id="header" class=" transparent-header {{(request() -> is ('/*') ) ? 'header__carru' : ''}}" data-sticky-class="not-dark">
 
-			{{-- <div id="header-wrap">
 
-				<div class="container clearfix">
 
-					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
-					<nav id="menu">
-						<!-- Logo============================================= -->
-						<div id="logo">
-							<a href="{!! URL::to('/') !!}" class=""><img class="logoA" src="{!! asset('images/Logotipo-01.png') !!}" alt="Altcel"></a>
-						</div><!-- #logo end -->
-						<input type="checkbox" id="check">
-						<label for="check" class="checkbtn">
-						<i class="icon-reorder"></i>
-						</label>
-						<a href="{!! URL::to('recargas') !!}"><div>Recarga</div></a>
-						<a href="{!! URL::to('quienesomos') !!}"><div>Nosotros</div></a>
-						<a href="{!! URL::to('planes') !!}"><div>Servicios</div></a>
-						<a href="{!! URL::to('soporte') !!}"><div>Soporte</div></a>
-						<span class="indicador" id="indicador"></span>
-
-					</nav>
-
-				</div>
-
-			</div> --}}
-			<nav class="{{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_bar' : ''}}">
+			<nav class="nav__color {{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_bar' : ''}}">
+				<!-- <input type="checkbox" class="mobile-menu" id="mobile-menu"> -->
 				<input type="checkbox" id="check">
 				<label for="check" class="checkbtn">
 					<i class="icon-reorder"></i>
@@ -149,12 +134,12 @@
 				    <!-- <img class="sustituida {{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'img_logo' : ''}}" src="{!! asset('images/logo-rojo.png') !!}" alt="Altcel"> -->
 				</a>
 				{{-- <a href="{!! URL::to('/') !!}" class=""><img class="logoA" src="{!! asset('images/Logotipo-01.png') !!}" alt="Altcel"></a> --}}
-				<ul>
+				<ul class="nav__enlaces">
 				    <li class="animate__animated animate__backInLeft {{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_li' : ''}}"><a class="{{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_li_a' : ''}}" href="{!! URL::to('/') !!}">Inicio</a></li>
 				    <li class="animate__animated animate__backInLeft {{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_li' : ''}}"><a class="{{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_li_a' : ''}}" id="test" href="{!! URL::to('recargas') !!}" onclick="myFun()">Recargas</a></li>
 				    <li class="animate__animated animate__backInLeft {{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_li' : ''}}"><a class="{{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_li_a' : ''}}" href="{!! URL::to('quienesomos') !!}">Nosotros</a></li>
 				    <li class="animate__animated animate__backInLeft {{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_li' : ''}}"><a class="{{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_li_a' : ''}}" href="{!! URL::to('planes') !!}">Servicios</a></li>
-				    <li class="animate__animated animate__backInLeft {{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_li' : ''}}"><a class="{{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_li_a' : ''}}" href="{!! URL::to('soporte') !!}">Soporte</a></li>
+				    <li class="animate__animated animate__backInLeft link_soport {{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_li' : ''}}"><a class="{{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_li_a' : ''}}" href="{!! URL::to('soporte') !!}">Soporte</a></li>
 				</ul>
 			</nav> 
 			{{-- <section class="menu2nav"></section> --}}
@@ -163,6 +148,7 @@
 		
 
     @yield('content')
+	
 
     {{-- <a href="https://wa.me/34555005500/?text=tu%20texto%20personalizado" target="_blank">
 	<img src="{!! asset('images/WhatsApp.png') !!}" width="50" height="50">
@@ -186,16 +172,16 @@
         ============================================= -->
         <footer id="footer" class="dark">
 
-		<div class="container">
+		<div class="container container__footer">
 		    <!-- Footer Widgets
 		    ============================================= -->
 		    <div class="footer-widgets-wrap clearfix">
 			    <!-- <div class="col-md-12">
 				    <p class="pFooter">Circuito de la 10a Poniente Norte No. 1050 Interior 1-A. Colonia Vista Hermosa. CP.29030. Tuxtla Gutiérrez, Chiapa.</p> 
 			    </div> -->
-			   <div class="col_one_third">
+			   <div class="col_one_third mov-contactanos">
 					<div class="widget clearfix">
-						<h4>Contáctanos</h4>
+						<h4 class="text__contac">Contáctanos</h4>
 						<div class="fslider  no-image nobg noborder noshadow nopadding contact">
 							<div class="flexslider">
 								<div class="slider-wrap ">
@@ -209,7 +195,7 @@
 				
 			   <div class="col_one_third mov-direcc">
 					<div class="widget clearfix">
-						<h4>Dirección</h4>
+						<h4 class="text__contac">Dirección</h4>
 						<div class="fslider  no-image nobg noborder noshadow nopadding contact">
 							<div class="flexslider">
 								<div class="slider-wrap">
@@ -223,7 +209,7 @@
 			   <div class="col_one_third col_last mov-ligas">
 					<div class="widget quick-contact-widget clearfix direccion">
 						<div class="widget clearfix ">
-							<h4 style="margin-top: 5rem;margin-left: 9rem">Ligas de Interes</h4>
+							<h4 class="link__trong" style="margin-top: 5rem;margin-left: 9rem">Ligas de Interes</h4>
 							<div class="ligasInteres">
 								<li style="list-style: none;">
 									<a href="/" class="ligas">
@@ -256,19 +242,54 @@
 					</div>
 			 	</div>
 
-				 <div class="col_one_third mov-redes__sociales">
-					<div class="widget clearfix">
+			   <div class="col_one_third col_last mov-redes_soc">
+					<div class="widget quick-contact-widget clearfix direccion">
+						<div class="widget clearfix ">
+							<h4 class="link__trong" style="margin-top: 5rem;margin-left: 9rem">Redes Sociales</h4>
+							<div class="ligasInteres">
+								<li style="list-style: none;">
+									<a href="https://www.facebook.com/AltcelMx/"class="ligas">
+										<li style="list-style: none;"><i class="fa-brands fa-facebook"></i>Facebook</li>
+									</a>
+								</li>
+								<li style="list-style: none;">
+									<a href="https://www.instagram.com/altcelmx/" class="ligas liga_instragram">
+										<li style="list-style: none;"><i class="fa-brands fa-instagram"></i>Instagram</li>
+									</a>
+								</li>
+								<li style="list-style: none;">
+									<a href="https://twitter.com/AltcelMx" class="ligas liga_twitter">
+										<li style="list-style: none;"><i class="fa-brands fa-twitter"></i>Twitter</li>
+									</a>
+								</li>
+								<li style="list-style: none;">
+									<a href="https://www.youtube.com/channel/UCAa9VVtFtVk_ehLHdnV41EA?view_as=subscriber" class="ligas">
+										<li style="list-style: none;"><i class="fa-brands fa-youtube"></i>Youtube</li>
+									</a>
+								</li>
+								<li style="list-style: none;">
+									<a href="https://api.whatsapp.com/send?phone=525612010013&app=facebook&entry_point=page_cta" class="ligas">
+										<li style="list-style: none;"><i class="fa-brands fa-whatsapp-square"></i>Whatsapp</li>
+									</a>
+								</li>
+							</div>
+						</div>
+					</div>
+			 	</div>
+
+				 <!-- <div class="col_one_third mov-redes__sociales">
+					<div class="widget clearfix mov_contactos">
 						<h4>Contáctanos</h4>
 						<div class="fslider  no-image nobg noborder noshadow nopadding contact">
 							<div class="flexslider">
-								<div class="slider-wrap ">
+								<div class="slider-wrap mov_redes__sociales">
 									<a href="https://www.facebook.com/AltcelMx/"class="ligas">
 										<li><i class="fa-brands fa-facebook"></i>Facebook</li>
 									</a>
-									<a href="https://www.instagram.com/altcelmx/" class="ligas">
+									<a href="https://www.instagram.com/altcelmx/" class="ligas liga_instragram">
 										<li><i class="fa-brands fa-instagram"></i>Instagram</li>
 									</a>
-									<a href="https://twitter.com/AltcelMx" class="ligas">
+									<a href="https://twitter.com/AltcelMx" class="ligas liga_twitter">
 										<li><i class="fa-brands fa-twitter"></i>Twitter</li>
 									</a>
 									<a href="https://www.youtube.com/channel/UCAa9VVtFtVk_ehLHdnV41EA?view_as=subscriber" class="ligas">
@@ -281,7 +302,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 
 
 			   <div class="col_one_third" style="margin-left: 5rem;margin-top: 50px">
@@ -315,6 +336,8 @@
 <script src="{{asset('js/jquery.js')}}"></script>
 <script src="{{asset('js/plugins.js')}}"></script>
 
+<script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
+
 {{-- {!! Html::script('pagina/js/jquery.js') !!} --}}
 {{-- {!! Html::script('pagina/js/plugins.js') !!} --}}
 
@@ -322,7 +345,20 @@
 <script src="{{asset('js/functions.js')}}"></script>
 {{-- {!! Html::script('pagina/js/functions.js') !!} --}}
 
-<script>
+
+<script >
+	function eventListeners() {
+    const mobileMenu = document.querySelector('.mobile-menu');
+	alert("hola");
+
+    mobileMenu.addEventListener('click', navegacionResponsive);
+}
+
+function navegacionResponsive() {
+    const navegacion = document.querySelector('.navegacion-principal');
+	alert("hola");
+    navegacion.classList.toggle('mostrar')
+}
 
 const menu = document.getElementById('menu');
 const indicador = document.getElementById('indicador');
@@ -369,6 +405,9 @@ const onResize = () => {
 }
 
 window.addEventListener('resize', onResize);
+
+
+
 </script>
 @yield('scripts')
 

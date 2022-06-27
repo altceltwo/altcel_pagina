@@ -11,8 +11,8 @@
   <section id="content">
     <section id="page-title" class="page-title-center paquetes" style="margin-top: 30px">
 
-      <div class="container clearfix">
-        <div class="col-md-6">
+      <div class="container clearfix info__paquete">
+        <div class="col-md-6 info__paquete-doc">
           <p class="text-package">Conoce nuestros paquetes, elige el que mejor se adecué a tus necesidades y <strong class="recarPackage">recarga en línea</strong>.</p>
           <p class="fraseAltcelPackage">¡Altcel te acompaña!</p>
           <a href="#cardsPlanes" class="btn btnConocelos">¡Conócelos!</a href="#">
@@ -28,7 +28,7 @@
         <div class="col_full">
           <div class="row">
             <div class="col-md-12" id="cardsPlanes">
-              <div class="col-md-3">
+              <div class="col-md-3 tarj__bot">
                 <div class="card mito" style="width: 18rem;">
                   <div class="card-body color-tar cent-mt">
                       <hr class="hrPackage">
@@ -50,7 +50,7 @@
                 </div>
               </div>
 
-              <div class="col-md-3">
+              <div class="col-md-3 tarj__bot">
                 <div class="card mito" style="width: 18rem;">
                   <div class="card-body color-tar cent-mt">
                       <hr class="hrPackage">
@@ -72,7 +72,7 @@
                 </div>
               </div>
 
-              <div class="col-md-3">
+              <div class="col-md-3 tarj__bot">
                 <div class="card mito" style="width: 18rem;">
                   <div class="card-body color-tar cent-mt">
                       <hr class="hrPackage">
@@ -94,7 +94,7 @@
                 </div>
               </div>
 
-              <div class="col-md-3">
+              <div class="col-md-3 tarj__bot">
                 <div class="card mito" style="width: 18rem;">
                   <div class="card-body color-tar cent-mt">
                       <hr class="hrPackage">
@@ -116,7 +116,7 @@
                 </div>
               </div>
 
-              <div class="col-md-3">
+              <div class="col-md-3 tarj__bot">
                 <div class="card mito" style="width: 18rem;">
                   <div class="card-body color-tar cent-mt">
                       <hr class="hrPackage">

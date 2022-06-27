@@ -1,7 +1,8 @@
 @extends('layouts.master')
 
 @section('content')
-<section id="slider"  class="slider-element slider-parallax swiper_wrapper full-screen clearfix">
+<section id="slider"  class="slider-element slider-parallax swiper_wrapper full-screen clearfix {{(request() -> is ('/*') ) ? 'carru__img' : ''}}">
+<!-- <section id="slider"  class="slider-element slider-parallax  clearfix {{(request() -> is ('/*') ) ? 'carru__img' : ''}}"> -->
 	<div class="slider-parallax-inner">
  
 	  <!-- <div class="swiper-container swiper-parent " style="background-image: url('images/QuienesSomos.jpg'); background-size: cover;background-repeat: no-repeat;">
@@ -42,9 +43,9 @@
             </div>
       </div>
             <ul class="ul-imagen">
-                <li class="li-imagen"><img src = "{!! asset('images/car3.jpg') !!}"></li>
                 <li class="li-imagen"><img src = "{!! asset('images/car1.jpg') !!}"></li>
-                <li class="li-imagen"><img src = "{!! asset('images/car2.jpg') !!}"></li>
+                <li class="li-imagen"><img src = "{!! asset('images/car3.jpg') !!}"></li>
+                <li class="li-imagen"><img src = "{!! asset('images/car4.jpg') !!}"></li>
                 <li class="li-imagen"><img src = "{!! asset('images/car2.jpg') !!}"></li>
                 <li class="li-imagen"><img src = "{!! asset('images/car1.jpg') !!}"></li>
             </ul>
@@ -76,10 +77,10 @@
   <section id="page-title" class="page-title-center">
 
     <div class="container clearfix">
-      <div class="row" >
+      <div class="row plan__paquet" >
         <a href="{!! URL::to('planes') !!}" class="btn btnIndexOpt btn-informacion" >
           <img class="icon-index" src="{!! asset('images/paquete.gif') !!}" alt="Paquetes">
-          <h2 class="paquete">Paquetes</h2>
+          <h2 class="paquete pat__paquete">Paquetes</h2>
         </a>
         <a href="https://altcel2.com/" class="btn btnIndexOpt btn-informacion" >
           <img class="icon-index" src="{!! asset('images/internet.gif') !!}" alt="Internet">
