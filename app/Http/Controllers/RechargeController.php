@@ -56,7 +56,7 @@ class RechargeController extends Controller
         $data['role'] = "danger";
         $r = "";
         $data['tel'] = $request['phone'];
-        // return $tel;
+        // return $data['qty'];
         $data['qty'] = $request['monto'];
         $diahora = date('d/m/Y H:i:s');
         $TransNumber = rand ( 1 , 99999 );
@@ -66,7 +66,7 @@ class RechargeController extends Controller
         $Instr1 = "Su tarjeta no ha sido afectada con ningun cargo.";
         $Instr2 = "";
 
-        switch ($request['monto']) {
+        switch ($data['qty']) {
             case 10:
             $sku = '6576840100108';
             break;
@@ -153,7 +153,7 @@ class RechargeController extends Controller
             'phonenumber' => $data['tel'],
             'qty' => $data['qty']
         ]);
-
+        
         $id = $cobro->id;
         //URL Produccion
         //https://mvno1.tnoreste.com/Altcel_WS/
@@ -161,8 +161,8 @@ class RechargeController extends Controller
         //URL Pruebas
         //http://tndesarollo.com/WS_ALTCEL/
 
-        $string = "<ReloadRequest><ID_GRP>1</ID_GRP><ID_CHAIN>2</ID_CHAIN><ID_MERCHANT>1</ID_MERCHANT><ID_POS>1</ID_POS><DateTime>".$diahora."</DateTime><SKU>".'6576840100108'."</SKU><PhoneNumber>".$data['tel']."</PhoneNumber><TransNumber>".$TransNumber."</TransNumber><ID_COUNTRY>0</ID_COUNTRY><TC>0</TC></ReloadRequest>";
-        $url = 'http://tndesarollo.com/WS_ALTCEL/ServicePX.asmx/getReloadClass?sXML='.($string);
+        $string = "<ReloadRequest><ID_GRP>1</ID_GRP><ID_CHAIN>2</ID_CHAIN><ID_MERCHANT>1</ID_MERCHANT><ID_POS>1</ID_POS><DateTime>".$diahora."</DateTime><SKU>".$sku."</SKU><PhoneNumber>".$data['tel']."</PhoneNumber><TransNumber>".$TransNumber."</TransNumber><ID_COUNTRY>0</ID_COUNTRY><TC>0</TC></ReloadRequest>";
+        $url = 'https://mvno1.tnoreste.com/Altcel_WS/ServicePX.asmx/getReloadClass?sXML='.($string);
         // return $url;
 
         try {
