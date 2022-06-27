@@ -258,7 +258,7 @@
                          window.ConektaCheckoutComponents.Integration({
                               targetIFrame: "#conektaIframeContainer",
                               checkoutRequestId: checkoutRequestId, // checkout request id
-                              publicKey: "key_KUxx4Sd9v8RiryYp27quVVA",
+                              publicKey: "key_WNqM3nJHo3J83tsXxrTxB3A",
                               options: {},
                               styles: {},
                               onFinalizePayment: function(event){
