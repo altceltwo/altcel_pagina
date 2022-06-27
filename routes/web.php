@@ -59,9 +59,7 @@ Route::get('recargas', function(){
 Route::get('card', function(){
 	return View::make('pagina.recargas.card');
 });
-Route::post('cardPasarela', function(){
-	return View::make('pagina.recargas.pasarela');
-})->name('cardaPost');
+Route::post('cardPasarela', 'OpenPayController@cardPayment')->name('cardaPost');
 
 
 Route::get('testmp', function () {
@@ -74,7 +72,11 @@ Route::post('pegaphone','DealerController@pegaPhone');
 
 // Route::get('rechargeWeb', 'RechargeController@rechargeWeb')->name('recarga');
 Route::get('validatePhone', 'RechargeController@rechargeWeb')->name('validPhone');
+Route::get('tarjeta', 'RechargeController@tarjetaNoreste')->name('tarNor');
 
 //webhook
 // Route::post('/webhook', 'WebhookController@webhookConekta');
 Route::post('/notifications-webhook', 'WebhookController@notificationWHk');
+Route::get('ticket', function(){
+	return view('pagina.recargas.pasarela');
+ })->name('ticket');

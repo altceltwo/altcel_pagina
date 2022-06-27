@@ -9,10 +9,10 @@ class ConektaPayment{
 
      function __construct(){
           //Key prueba Altcel2
-          Conekta::setApiKey('key_qbK6zfeHtAHSXJxsMHciLw');
+          // Conekta::setApiKey('key_qbK6zfeHtAHSXJxsMHciLw');
 
           //Key de prueba Altcel
-          // Conekta::setApiKey('key_ShYLEz3UBoXLpzupF83xaQ');
+          Conekta::setApiKey('key_ShYLEz3UBoXLpzupF83xaQ');
           //Key produccion
           // Conekta::setApiKey('key_duJxSBstM6rsGAqH3NLWkQ');
           Conekta::setApiVersion('2.0.0');
@@ -95,5 +95,51 @@ class ConektaPayment{
                $err['message'] = $error->getMessage();
                return $err;
            }
+     }
+
+     public function checkout($request){
+          $phone = $request->get('phone');
+          $name = $request->get('name');
+          $nombre = trim($name);
+          // return $nombre;
+          $monto = $request->get('monto');
+          $correo = $request->get('correo');
+
+          $validCustomer = [
+               'name' => $nombre,
+               'email' => $correo,
+               'phone' => $phone,
+               'count' => $monto
+          ];
+
+          $customer = \Conekta\Customer::create($validCustomer);
+
+          if (isset($customer -> id)) {
+
+               $validOrderWithCheckout = array(
+                    'line_items'=> array(
+                      array(
+                        'name'=> 'Recarga Altcel',
+                        'description'=> 'Compra de Saldo Online',
+                        'unit_price'=> $monto*100,
+                        'quantity'=> 1,
+                      )
+                    ),
+                    'checkout' => array(
+                      'allowed_payment_methods' => array("card"),
+                    ),
+                    'customer_info' => array(
+                      'customer_id'   =>  $customer -> id
+                    ),
+                    'currency'    => 'mxn'
+                  );
+               // return $validOrderWithCheckout;
+               $order = \Conekta\Order::create($validOrderWithCheckout);
+               return $order;
+               
+               return $order;
+          }
+
+          return $customer;
      }
 }

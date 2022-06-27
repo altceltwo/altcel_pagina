@@ -43,6 +43,7 @@
                          <label for="register-form-name">Monto:</label>
                          <select id="monto" class="form-control input-dis ">
                               <option selected>Monto...</option>
+                              <option value="10">$ 10</option>
                               <option value="50">$ 50</option>
                               <option value="60">$ 60</option>
                               <option value="69">$ 69</option>
@@ -66,10 +67,61 @@
           </div>
       </div>
   </section>
+  <div id="conektaIframeContainer" style="height: 700px;"></div>
+
+  <div class="modal" id="modal-ticket" tabindex="-1" style="width: 50rem;; background-color:white;margin-left: 49rem;">
+     <div class="content" style="margin: 5rem;">
+          <div class="row justify-content-center">
+            <div class="col-8 text-center">
+              <img src="{{ asset('images/logo.png') }}" width="130px" alt="">
+              <br>
+              <br>
+              <div class="alert " role="alert">
+                <b id="description"></b>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-8">
+              <table class="table">
+                <tr>
+                  <td>Fecha y Hora:</td>
+                  <td id="date_ticket"></td>
+                </tr>
+                <tr>
+                  <td># de transacción:</td>
+                  <td id="transa"></td>
+                </tr>
+                <tr>
+                  <td># de Autorización:</td>
+                  <td id="autorization"></td>
+                </tr>
+                <tr>
+                  <td>Monto de la Recarga:</td>
+                  <td id="amount_ticket">$ </td>
+                </tr>
+                <tr>
+                  <td>Teléfono:</td>
+                  <td id="phone_ticket"></td>
+                </tr>
+                <tr>
+                  <td width="45%">Observaciones:</td>
+                  <td class="text-justify" id="observation"></td>
+                </tr>
+                <tr class="no-print d-print-none">
+                  <td class="text-center"><button class="btn btn-primary" onclick="myFunction()">Imprimir</button></td>
+                  <td class="text-center"><button class="btn btn-danger" data-dismiss="modal">Cerrar</button></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+  </div>
 @stop
 
 @section('scripts')
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="text/javascript" src="https://pay.conekta.com/v1.0/js/conekta-checkout.min.js"></script>
   <script type="text/javascript">
      $('.recharge').click(function(){
           let name = $('#nombre').val();
@@ -141,31 +193,95 @@
                     return false;
           }
           
-          //ajax original
-          // $.ajax({
-          //      url: "{{route('validPhone')}}",
-          //      type: 'GET',
-          //      data: {phone:phone, monto:monto, name:name, correo:correo},
-          //      success: function(response){
-          //           if (response == 1) {
-          //                Swal.fire({
-          //                     icon: 'error',
-          //                     title: 'Oops...',
-          //                     text: 'Por favor introduzca un número Altcel.',
-          //                     showConfirmButton: true,
-          //                     // timer: 2000
-          //                });
-          //           }else{
-          //                console.log(response)
-          //                return false;
-          //           }
-          //      }
-          // })
+          //ajax original para coneckta
+          $.ajax({
+               url: "{{route('validPhone')}}",
+               type: 'GET',
+               data: {phone:phone, monto:monto, name:name, correo:correo},
+               success: function(response){
+                    if (response == 1) {
+                         Swal.fire({
+                              icon: 'error',
+                              title: 'Oops...',
+                              text: 'Por favor introduzca un número Altcel.',
+                              showConfirmButton: true,
+                              // timer: 2000
+                         });
+                    }else{
+                         // console.log(response.checkout.id)
+                         // return false;
+                         var checkoutRequestId = response.checkout.id;
+                         window.ConektaCheckoutComponents.Integration({
+                              targetIFrame: "#conektaIframeContainer",
+                              checkoutRequestId: checkoutRequestId, // checkout request id
+                              publicKey: "key_KUxx4Sd9v8RiryYp27quVVA",
+                              options: {},
+                              styles: {},
+                              onFinalizePayment: function(event){
+                                   let status = event.charge.status;
+                                   let order_id = event.id
+                                   console.log(status);
+                                   console.log(event,'MI EVENTO');
+                              
+                                   if (status == 'paid') {
+                                        Swal.fire({
+                                             title: 'Estamos realizando su recarga...',
+                                             html: 'Espera un poco, por favor...',
+                                             timerProgressBar: true,
+                                             didOpen: () => {
+                                                  $.ajax({
+                                                       url: "{{route('tarNor')}}",
+                                                       type: 'GET',
+                                                       data: {phone:phone, monto:monto, status:status, order_id:order_id},
+                                                       success: function(response){
+                                                            Swal.close();
+
+                                                            let AutoNo = response.AutoNo;
+                                                            let DateTime = response.DateTime;
+                                                            let DescripcionCode = response.DescripcionCode;
+                                                            let Instr1 = response.Instr1;
+                                                            let Instr2 = response.Instr2;
+                                                            let TransNumber = response.TransNumber;
+                                                            let cod = response.cod;
+                                                            let qty = response.qty;
+                                                            let role = response.role;
+                                                            let tel = response.tel;
+                                                            
+                                                            $('#phone_ticket').html(tel);
+                                                            $('#amount_ticket').html(qty);
+                                                            $('#autorization').html(AutoNo);
+                                                            $('#transa').html(TransNumber);
+                                                            $('#date_ticket').html(DateTime);
+                                                            $('#observation').html(Instr1+'<br>'+ '<br>'+ Instr2);
+                                                            $('#description').html(DescripcionCode);
+                                                            $('#alert').addClass('alert-'+role);
+
+                                                            $("#modal-ticket").modal("show");
+                                                            console.log(response)
+                                                            // return false;
+                                                       }
+                                                  })
+                                             }
+                                        })
+                                        
+                                   }
+                              }
+                         })
+                    }
+               }
+          })
           
-          newwindow=window.open('card?telefono='+phone+'&monto='+monto+'&email='+correo+'&nombre='+nombre,'Recargas','height=800,width=800');
+          // newwindow=window.open('card?telefono='+phone+'&monto='+monto+'&email='+correo+'&nombre='+name,'Recargas','height=800,width=800');
           
 
      })
-
+     function myFunction() {
+      window.print();
+    }
+    function closeMe()
+    {
+      window.opener = self;
+      window.close();
+    }
   </script>
 @stop
