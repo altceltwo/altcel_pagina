@@ -11127,6 +11127,7 @@ body:not(.no-transition) #wrapper,
   .slider__informa{
 	margin-top: 13rem;
     position: absolute;
+	margin-top: 18rem!important;
   }
   .color-text{
 	color:#FFFFFF!important;
@@ -11399,6 +11400,46 @@ body:not(.no-transition) #wrapper,
 		height: 26rem!important;
 		margin-bottom: -12rem !important;
 	}
+	.nav__color{
+		/* background: #c71326; */
+		background: #0A0D2D!important;
+		margin-top: -2rem;
+		box-shadow: 4px 4px 30px #666;
+		/* box-shadow: 0px 0px 23px #666; */
+	}
+	.slider__informa{
+		font-size: 1px;
+		margin-left: -13rem!important;
+		margin-right: -6rem;
+		z-index: 3;
+	}
+	.color-text{
+		margin-left: 15rem !important;
+		margin-top: -8rem !important;
+		font-size: 13px!important;
+	}
+	.btnprincipal1 {
+		margin-right: 0.5rem;
+		margin-left: -0.3rem;
+		font-size: 10px !important;
+		background-color: red;
+		color: white !important;
+		width: 8.5rem;
+	}
+	.btnprincipal2 {
+		font-size: 11px !important;
+		width: 9.4rem;
+		height: 2.8rem;
+	  
+	}
+	.fa-earth-americas {
+		margin-left: 0.5rem;
+		width: 3rem;
+		font-size: 1.5rem;
+	  }
+	#btnIndex {
+		margin-left: 14rem !important;
+	  }
 	.header__carru{
 		z-index: 1!important;
 	}
@@ -11422,12 +11463,35 @@ body:not(.no-transition) #wrapper,
 	.cent-mt{
 		background-color: #fff;
 	}
-	.hrIndex {
-		width: 81%;
-		margin-left: 4rem;
-		border: 2px solid black;
-		margin-top: -10px;
+	.text-justify {
+		font-size: 18px;
+		text-align: justify;
+		margin-left: 2rem;
+		margin-right: -6rem;
+		margin-top: -3rem;
 	  }
+	.hrIndex {
+		width: 55%;
+		margin-left: 2rem;
+		border: 2px solid black;
+		margin-top: -21px;
+	}
+	.img-index1 {
+		margin-left: 15rem;
+		margin-top: -3rem;
+		height: 17rem;
+		width: 17rem;
+		opacity: 1.7;
+	}
+	.img-index2 {
+		margin-left: 1rem;
+		margin-top: -18rem;
+		height: 16rem;
+		width: 16rem;
+	}
+	.eresAlt {
+		margin-top: -2rem !important;
+	}
 	.marcarCall {
 		margin-top: 9rem !important;
 		margin-left: 8rem !important;
@@ -11462,8 +11526,10 @@ body:not(.no-transition) #wrapper,
 		font-size: 31px;
 		font-size: 38px;
 		margin-left: 3rem;
-		margin-top: -4rem;
-		margin-right: -5rem;
+		margin-top: 14rem;
+		margin-right: 0rem;
+		/* margin-top: -4rem;
+		margin-right: -5rem; */
 	  }
 	.vr {
 		margin-top: -12.3rem!important;
@@ -11648,6 +11714,26 @@ body:not(.no-transition) #wrapper,
 	  .link_soport{
 		margin-top: -3rem!important;
 	  }
+	  .img__somos{
+		height: 20rem!important;
+	}
+	#somos {
+		margin-left: -20rem;
+		margin-top: 0rem;
+	}
+	#somos p {
+		font-size: 14px;
+		margin-top: -2rem;
+		margin-left: 22rem;
+
+		/* font-size: 25px;
+		margin-top: 2rem;
+		margin-left: 2px; */
+	}
+	.text_quienesSomos {
+		font-size: 19px!important;
+		margin-left: 22rem;
+	}
 	/*Media Query Lalo*/
 }
 
@@ -11660,12 +11746,12 @@ body:not(.no-transition) #wrapper,
 	  }
 	  .nav__enlaces{
 		margin-left: 39rem !important;
-		height: 20vh;
+		height: 22vh;
 		opacity: 0.9;
 		margin-top: -1.8rem;
 		border-radius: 1rem;
-		width: auto;
-		}
+		width: 100%;
+	}
 		.logoA {
 			height: 78px;
 			margin-top: -1.5rem;
@@ -11710,12 +11796,24 @@ body:not(.no-transition) #wrapper,
 		margin-top: -23px;
 	  }
 	  .plan__paquet {
-		margin-left: -7.9rem;
+		margin-left: -9.9rem;
 		margin-right: -29rem;
 	  }
 	  .btn-informacion {
 		height: 13.5rem;
 		margin-right: 3rem;
+	  }
+	  .img-socialNetwork {
+		margin-left: 14rem;
+		margin-top: -8rem;
+		height: 16rem;
+		width: 26rem;
+	  }
+	  .fraseAltcelPackage {
+		margin-left: -4rem !important;
+	  }
+	  .btnConocelos {
+		margin-left: -13rem !important;
 	  }
 	  .icon-index {
 		width: 75px!important;
@@ -11779,11 +11877,18 @@ body:not(.no-transition) #wrapper,
 		}
 
 		#indexp, p{
+			font-size: 20px !important;
+			margin-left: 2rem;
+			margin-right: 9rem;
+			margin-top: 15rem;
+		}
+		.text-justify{
 			font-size: 12px;
 			/* font-size: 38px; */
 			margin-left: 2rem;
-			margin-right: -13rem;
-			margin-top: -4rem;
+			margin-right: -11rem;
+			margin-top: -3rem;
+
 		}
 		#paquetesPp{
 			font-size: 12px;
@@ -11858,12 +11963,11 @@ body:not(.no-transition) #wrapper,
 			height: 9rem;
 		}
 
-		.img-paquete{
-			margin-left: -27rem;
-			margin-top: -10rem;
-			height: 21rem;
-			width: 17rem;
-			opacity: 0.8;
+		.img-paquetes {
+			margin-left: 18rem;
+			margin-top: -66rem;
+			height: 13rem;
+			width: 25rem;
 		}
 
 		#page-title.page-title-left.paquete p{
@@ -11873,14 +11977,27 @@ body:not(.no-transition) #wrapper,
 			color: #BBB;
 		}
 		#page-title.page-title-center.paquetes p{
-			font-size: 9px!important;
+			font-size: 20px!important;
 		}
-		.img-paquetes{
-			margin-left: 27rem;
-			margin-top: -9rem;
-			height: 13rem;
-			width: 13rem;
+		.text-package {
+			margin-left: -2rem;
 		}
+		.text-package {
+			text-align: justify !important;
+		}
+		.container {
+			padding-left: 39px;
+		}
+		.img-paquetes {
+			-webkit-transform: rotate(23deg);
+			margin-bottom: -3rem;
+		  }
+		  .img-paquetes {
+			margin-left: 12rem;
+			margin-top: -79rem;
+			height: 16rem;
+			width: 30rem;
+		  }
 		.hrSomos{
 			display: none;
 
@@ -11939,8 +12056,21 @@ body:not(.no-transition) #wrapper,
 		margin-bottom: 3rem!important;
 		height: 32rem!important;
 	}
+	.nav__color{
+		background: transparent!important;
+		margin-top: 0rem;
+		box-shadow: none
+	}
 	.pat__paquete{
 		margin-left: 0rem;
+	}
+	.slider__informa {
+		margin-left: 7rem !important;
+	}
+	.color-text{
+		font-size: 30px !important;
+		margin-top: 13rem !important;
+		margin-left: 2rem !important;
 	}
 	#content {
 		z-index: 1;
@@ -11983,10 +12113,23 @@ body:not(.no-transition) #wrapper,
 		margin-right: -40px;
 	}
 	#indexp, p{
-		font-size: 31px;
+		font-size: 30px!important;
 		/* font-size: 38px; */
-		margin-left: 8rem;
-		margin-top: 10rem;
+		/* margin-left: 8rem!important; */
+		margin-top: 13rem !important;
+	}
+	.img-index2 {
+		margin-left: 52rem;
+		margin-top: -35rem;
+		height: 35rem;
+		width: 34rem;
+	}
+	.img-index1 {
+		margin-left: 80rem;
+		margin-top: -28rem;
+		height: 43rem;
+		width: 43rem;
+		opacity: 1.7;
 	}
 	.hrIndex{
 		width: 27%;
@@ -12014,8 +12157,12 @@ body:not(.no-transition) #wrapper,
 		margin-bottom: 0rem !important;
 		margin-left: 0rem !important;
 	}
+	.enlaces__mov1{
+		margin-left: 58rem!important;
+	}
 	.nav__enlaces {
-		margin-left: 55rem !important;
+		margin-left: 0rem !important;
+		/* margin-left: 55rem !important; */
 	}
 	.tarj__bot{
 		padding-bottom: 0rem;
@@ -12138,12 +12285,14 @@ body:not(.no-transition) #wrapper,
 		font-size: 27px !important;
 		text-align: initial!important;
 		margin-left: 6rem!important;
+		margin-top: 2rem !important;
 	}
 	.fraseAltcelPackage {
-		margin-left: -24rem!important;
+		margin-left: -2rem !important;
+		margin-top: 0rem !important;
 	}
 	.btnConocelos {
-		margin-left: -29rem!important;
+		margin-left: -3rem!important;
 	}
 	.img-socialNetwork {
 		margin-left: 28rem;
@@ -12151,6 +12300,53 @@ body:not(.no-transition) #wrapper,
 		height: 25rem;
 		width: 45rem;
 	}
+	#pMision {
+		margin-top: -1rem!important;
+		font-size: 21px;
+		margin-left: 0rem;
+		margin-right: 15rem;
+	}
+	.h4Visi {
+		margin-top: 19rem;
+		margin-left: 3rem;
+		font-size: 33px;
+	}
+	#hrvision {
+		border: 1px solid black;
+		margin-top: -2rem;
+		width: 12%;
+		margin-left: 2rem;
+	}
+	#hrvision2 {
+		margin-top: -2.4rem;
+		width: 5%;
+		margin-left: 16rem;
+	  }
+	  #pVision {
+		margin-top: -1rem!important;
+		margin-left: 1rem;
+	}
+	.t_saldo{
+		margin-top: 1rem!important;
+	}
+	.img__somos{
+		height: 925px!important;
+	}
+	#somos {
+		margin-left: 12rem;
+		margin-top: 16rem;
+	  }
+	  #somos p {
+		font-size: 25px;
+		margin-top: 2rem;
+		margin-left: 2px;
+	  }
+	  .text_quienesSomos {
+		font-size: 30px !important;
+		margin-left: 1rem;
+	  }
+
+
 }
 
 @media(min-width: 1366px){
@@ -12172,6 +12368,11 @@ body:not(.no-transition) #wrapper,
 		margin-bottom: 3rem!important;
 		height: 32rem!important;
 	}
+	.nav__color{
+		background: transparent!important;
+		margin-top: 0rem;
+		box-shadow: none
+	}
 	#content {
 		z-index: 1;
 	}
@@ -12191,6 +12392,14 @@ body:not(.no-transition) #wrapper,
 	}
 	.pat__paquete {
 		margin-left: 0rem;
+	}
+	.slider__informa {
+		margin-left: 7rem !important;
+	}
+	.color-text{
+		font-size: 30px !important;
+		margin-top: 13rem !important;
+		margin-left: 5rem !important;
 	}
 	#indexp, p{
 		font-size: 31px;
@@ -12244,8 +12453,12 @@ body:not(.no-transition) #wrapper,
 		margin-bottom: 0rem !important;
 		margin-left: 0rem !important;
 	}
+	.enlaces__mov1{
+		margin-left: 73rem!important;
+	}
 	.nav__enlaces {
-		margin-left: 73rem !important;
+		margin-left: 0rem !important;
+		/* margin-left: 73rem !important; */
 	}
 
 	.fiel_nombre {
@@ -12368,16 +12581,19 @@ body:not(.no-transition) #wrapper,
 		text-align: initial!important;
 	}
 	.fraseAltcelPackage {
-		margin-left: -25rem!important;
+		margin-left: -1rem!important;
 	}
 	.btnConocelos {
-		margin-left: -31rem!important;
+		margin-left: -4rem!important;
 	}
 	.img-socialNetwork {
 		margin-left: 26rem;
 		margin-top: -13rem;
 		height: 25rem;
 		width: 45rem;
+	}
+	.img-index1 {
+		margin-left: 82rem;
 	}
 }
 
@@ -12408,9 +12624,22 @@ body:not(.no-transition) #wrapper,
 		height: 25rem;
 		width: 45rem;
 	}
+	.slider__informa {
+		margin-left: 7rem !important;
+	}
+	.color-text{
+		font-size: 30px !important;
+		margin-top: 13rem !important;
+		margin-left: 5rem !important;
+	}
 	#content {
 		z-index: 0;
-	  }
+	}
+	.nav__color{
+		background: transparent!important;
+		margin-top: 0rem;
+		box-shadow: none
+	}
 	.img-fon {
 		height: 60rem!important;
 	}
@@ -12480,8 +12709,12 @@ body:not(.no-transition) #wrapper,
 		margin-top: -13.2rem!important;
 		height: 11.3rem;
 	}
+	.enlaces__mov1{
+		margin-left: 82rem!important;
+	}
 	.nav__enlaces {
-		margin-left: 73rem !important;
+		margin-left: 0rem !important;
+		/* margin-left: 73rem !important; */
 	}
 	.marcarCall{
 		margin-top: 1rem!important;
@@ -12612,10 +12845,14 @@ body:not(.no-transition) #wrapper,
 		margin-left: 2rem!important;
 	}
 	.fraseAltcelPackage {
-		margin-left: -32rem!important;
+		margin-left: -11rem!important;
 	}
 	.btnConocelos {
-		margin-left: -37rem!important;
+		margin-left: -12rem!important;
+
+	}
+	.img-index1 {
+		margin-left: 87rem;
 	}
 }
 
@@ -12625,11 +12862,11 @@ body:not(.no-transition) #wrapper,
 	}
 	.carru__img {
 		top: -10.5rem!important;
-		height: 691px!important;
+		height: 90rem!important;
 		margin-bottom: -8rem!important;
 	}
 	#btnIndex {
-		margin-left: 5rem!important;
+		margin-left: 8rem !important;
 	}
 	.cardRecarga {
 		border-radius: 30px;
@@ -12642,6 +12879,11 @@ body:not(.no-transition) #wrapper,
 	}
 	.img-fon {
 		height: 60rem!important;
+	}
+	.nav__color{
+		background: transparent!important;
+		margin-top: 0rem;
+		box-shadow: none
 	}
 	.logoA {
 		height: 78px;
@@ -12659,6 +12901,14 @@ body:not(.no-transition) #wrapper,
 	}
 	.pat__paquete {
 		margin-left: 0rem;
+	}
+	.slider__informa {
+		margin-left: 7rem !important;
+	}
+	.color-text{
+		font-size: 30px !important;
+		margin-top: 13rem !important;
+		margin-left: 5rem !important;
 	}
 	#indexp, p{
 		font-size: 31px;
@@ -12696,6 +12946,7 @@ body:not(.no-transition) #wrapper,
 	.plan__paquet{
 		margin-left: -15px;
 		margin-right: -40px;
+		margin-top: 4rem;
 	}
 	@-moz-document url-prefix() {
 		.btn-recar {
@@ -12711,8 +12962,12 @@ body:not(.no-transition) #wrapper,
 		margin-bottom: 0rem !important;
 		margin-left: 0rem !important;
 	}
+	.enlaces__mov1{
+		margin-left: 125rem!important;
+	}
 	.nav__enlaces {
-		margin-left: 129rem !important;
+		margin-left: 0rem !important;
+		/* margin-left: 129rem !important; */
 	}
 
 	.fiel_nombre {
@@ -12826,13 +13081,25 @@ body:not(.no-transition) #wrapper,
 	}
 	.container {
 		margin-left: 37rem !important;
-	  }
-	  .img-socialNetwork {
+	}
+	.img-socialNetwork {
 		margin-left: 39rem;
 		margin-top: -13rem;
 		height: 28rem;
 		width: 50rem;
-	  }
+	}
+	.text-justify {
+		text-align: justify;
+		margin-left: 8rem !important;
+		margin-top: 17rem !important;
+		margin-right: -13rem;
+	}
+	.img-index1 {
+		margin-left: 125rem;
+	}
+	.img-index2 {
+		margin-left: 97rem;
+	}
 }
 
 /*menu opcion 1*/
@@ -12977,7 +13244,13 @@ nav .indicador {
 	display: inline-block;
 	line-height: 80px;
 	margin: 0 5px;
-	margin-top: 0rem;
+	margin-top: 0rem!important;
+ }
+ .enlaces__nav_enlaces{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+	margin-top: -2rem;
  }
  nav ul li a{
 	color: white!important;

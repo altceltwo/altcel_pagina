@@ -6,15 +6,15 @@
   <section id="slider"  class="slider-element slider-parallax swiper_wrapper full-screen clearfix">
     <div class="slider-parallax-inner">
 
-      <div class="swiper-container swiper-parent" style="background-image: url('images/QuienesSomos.jpg') ; background-size: cover;background-repeat: no-repeat;">
+      <div class="swiper-container swiper-parent cambio_img" style="background-image: url('images/nosotros2.jpg') ; background-size: cover;background-repeat: no-repeat;">
         <div class="swiper-wrapper">
-          <div class="swiper-slide dark" >
+          <div class="swiper-slide dark img__somos" >
             <div class="col_one_third" id="somos">
 
               <div >
-                <h3><strong>¿Quiénes somos?</strong></h3>
+                <h3 class="text_quienesSomos"><strong>¿Quiénes somos?</strong></h3>
               </div>
-              <p class="text-justify">
+              <p class="text-justify somo_text">
                 Somos una empresa especializada en comercializar productos y servicios en el ramo de telecomunicaciones.
                 </p>
   
@@ -68,7 +68,7 @@
       <img src="{!! asset('images/Círculos-01.png') !!}" id="circle" alt="">
   
       <div class="container clearfix">
-        <p>¿Te quedaste sin saldo? Consulta tu <br> plan favorito y <strong>recarga desde $10.00</strong></p>
+        <p class="t_saldo">¿Te quedaste sin saldo? Consulta tu <br> plan favorito y <strong>recarga desde $10.00</strong></p>
         <button class="btn btnsomos"><a href="https://api.whatsapp.com/send?phone=525612010013&app=facebook&entry_point=page_cta">Recarga</a></button>
         
         <img src="{!! asset('images/animatedSomos.png') !!}" class="img-somosBanner" alt="" >
