@@ -2008,6 +2008,7 @@
 
 }
 
+
 @media (max-width: 479px) {
 
 	.container,
@@ -2028,7 +2029,8 @@
 
 	.swiper_wrapper:not(.force-full-screen),
 	.swiper_wrapper:not(.force-full-screen):not(.canvas-slider-grid) .swiper-slide,
-	.ei-slider { height: 180px !important; }
+	.ei-slider { height: 180px; }
+	/* .ei-slider { height: 180px !important; } */
 
 	.swiper_wrapper .slider-caption h2 { font-size: 28px; }
 
@@ -2153,7 +2155,6 @@
 	.button.button-desc span { font-size: 11px; }
 
 }
-
 
 /* ----------------------------------------------------------------
 	Retina CSS
