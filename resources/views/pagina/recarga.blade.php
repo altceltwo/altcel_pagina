@@ -46,6 +46,8 @@
                                    <legend class="nombre_titular"><i class="fa-solid fa-sack-dollar"></i>Monto:</legend>
                                    <select id="monto" class="form-control input-dis ">
                                         <option selected>Monto...</option>
+                                        <option value="20">$ 20</option>
+                                        <option value="30">$ 30</option>
                                         <option value="50">$ 50</option>
                                         <option value="60">$ 60</option>
                                         <option value="69">$ 69</option>
