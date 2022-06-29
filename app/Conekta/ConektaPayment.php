@@ -12,9 +12,9 @@ class ConektaPayment{
           // Conekta::setApiKey('key_qbK6zfeHtAHSXJxsMHciLw');
 
           //Key de produccion Altcel
-          Conekta::setApiKey('key_2mL8v6m1pqbFzz8qVARzRg');
+          // Conekta::setApiKey('key_2mL8v6m1pqbFzz8qVARzRg');
           //Key prueba
-          // Conekta::setApiKey('key_ShYLEz3UBoXLpzupF83xaQ');
+          Conekta::setApiKey('key_ShYLEz3UBoXLpzupF83xaQ');
           Conekta::setApiVersion('2.0.0');
 
           // $this->Webhook = new WebhookController();

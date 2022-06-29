@@ -162,7 +162,7 @@ class RechargeController extends Controller
         //http://tndesarollo.com/WS_ALTCEL/
 
         $string = "<ReloadRequest><ID_GRP>1</ID_GRP><ID_CHAIN>2</ID_CHAIN><ID_MERCHANT>1</ID_MERCHANT><ID_POS>1</ID_POS><DateTime>".$diahora."</DateTime><SKU>".$sku."</SKU><PhoneNumber>".$data['tel']."</PhoneNumber><TransNumber>".$TransNumber."</TransNumber><ID_COUNTRY>0</ID_COUNTRY><TC>0</TC></ReloadRequest>";
-        $url = 'https://mvno1.tnoreste.com/Altcel_WS/ServicePX.asmx/getReloadClass?sXML='.($string);
+        $url = 'http://tndesarollo.com/WS_ALTCEL/ServicePX.asmx/getReloadClass?sXML='.($string);
         // return $url;
 
         try {

@@ -99,7 +99,7 @@
 
         <div class="col-md-9">
           <p class="text-justify index-text">
-            Atrévete a vivir la nueva experiencia en telefonia móvil y <strong>cámbiate a Altcel.</strong><br>¡Solicita  <mark style="background-color: red; color: white">tu SIM!</mark>
+            Atrévete a vivir la nueva experiencia en telefonia móvil y <strong>cámbiate a Altcel.</strong><br>¡Solicita  <mark style="background-color: red; "><a style="color: white!important" href="https://api.whatsapp.com/send?phone=529613601404">tu SIM!</a></mark>
           </p>
           <hr class="hrIndex">
         </div>
