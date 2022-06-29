@@ -28,7 +28,7 @@ dl, dt, dd, ol, ul, li {
 .divMision p{
 	/* margin-top: -8rem;
 	margin-left: 33rem; */
-	font-size: 36px!important;
+	font-size: 36px;
 }
 #visionmisionhr{
 	border: 1px solid red;
@@ -162,7 +162,7 @@ dl, dt, dd, ol, ul, li {
 }
 .btnprincipal2:hover{
 	background-color: red;
-	color: white;
+	color: white!important;
 
 	/* box-shadow: 0 4px 16px rgba(49, 138, 172, 1); */
 	box-shadow: 0 10px 20px rgba(49, 138, 172, 1);
@@ -7929,7 +7929,8 @@ body:not(.device-touch) .team-overlay {
 .hrPackage{
 	width: 70%;
 	color: #7f71ea;
-	border-top: 1px solid #7f71ea!important;
+	border-top: 1px solid #fd1532!important;
+	/* border-top: 1px solid #7f71ea!important; */
 }
 
 .hrIndex{
@@ -10615,7 +10616,8 @@ body:not(.no-transition) #wrapper,
 	/* background-attachment: fixed; */
 	background-size: cover;
 	background-position: center;
-	height: 22rem;
+	height: 28rem;
+	/* height: 22rem; */
 }
 
 .h4VisiMis{
@@ -10736,10 +10738,10 @@ body:not(.no-transition) #wrapper,
 }
 
 .img-soporte{
-	margin-left: 64rem;
-	margin-top: -27rem;
-	height: 47rem;
-	width: 47rem;
+	margin-left: 71rem;
+	margin-top: -29rem;
+	height: 33rem;
+	width: 33rem;
 	opacity: 0.8;
 }
 
@@ -10794,7 +10796,7 @@ body:not(.no-transition) #wrapper,
 	margin-top: -49rem;
 	height: 46rem;
 	width: 105rem;
-	-webkit-transform: rotate(12deg);
+	-webkit-transform: rotate(19deg);
   margin-bottom: -3rem;
 
 }
@@ -10933,6 +10935,7 @@ body:not(.no-transition) #wrapper,
 	right: 20px;
 	font-size: 38px;
 	font-weight:bold;
+	cursor: pointer;
  }
 
  .accordion-content {
@@ -11320,7 +11323,7 @@ body:not(.no-transition) #wrapper,
 	.img-paquetes{
 		margin-left: 100rem;
 		margin-top: -45rem;
-		height: 50rem;
+		height: 46rem;
 		width: 102rem;
 	}
 	.container {
@@ -11372,8 +11375,8 @@ body:not(.no-transition) #wrapper,
 
    }
 .btnsomos{
-	margin-left: 7rem;
-	width: 10rem;
+	margin-left: 9rem;
+	width: 13rem;
 	font-size: 17px;
 	margin-top: -2rem;
 }
@@ -11383,6 +11386,17 @@ body:not(.no-transition) #wrapper,
 	transform: scale(1.1);
 	box-shadow: 0px 0px 10px #666;
 }
+
+.fixed{
+    position: fixed;
+    width: 100%;
+    top: 20px;
+    left: 0;
+    z-index: 2;
+  }
+.fixed_color{
+	margin-top: -1rem!important;
+  }
 
 /*query para celular*/
 @media (min-width:320px){
@@ -11522,9 +11536,9 @@ body:not(.no-transition) #wrapper,
 	#indexp, p {
 		font-size: 31px;
 		font-size: 38px;
-		margin-left: 3rem;
-		margin-top: 14rem;
-		margin-right: 0rem;
+		margin-left: 6rem;
+		margin-top: -4rem;
+		margin-right: -3rem;
 		/* margin-top: -4rem;
 		margin-right: -5rem; */
 	  }
@@ -11581,7 +11595,9 @@ body:not(.no-transition) #wrapper,
 	.text-package {
 		font-size: 19px !important;
 		text-align: justify;
-		margin-left: 2rem;
+		margin-left: -2rem;
+		margin-top: 13rem;
+		margin-right: -2rem;
 	}
 	nav ul {
 		margin-left: 32rem!important;
@@ -11731,6 +11747,182 @@ body:not(.no-transition) #wrapper,
 		font-size: 19px!important;
 		margin-left: 22rem;
 	}
+	.form_soporte{
+		margin-left: 5.5rem;
+		margin-top: -14rem;
+	}
+	.buscador{
+		width: 25rem;
+		margin-left: 1rem;
+	}
+	.btn-outline-success{
+		margin-left: -25rem;
+		margin-bottom: -5rem;
+	}
+	.div_form{
+		margin-left: -25rem;
+		margin-right: -3rem;
+	}
+	.img-soporte {
+		margin-left: 16.5rem;
+		margin-top: -10rem;
+		height: 18rem;
+		width: 18rem;
+		opacity: 0.8;
+	}
+	.btnsomos {
+		margin-left: 0rem;
+		width: 13rem;
+		font-size: 17px;
+		margin-top: -2rem;
+	  }
+	.img-red{
+		margin-left: 5rem;
+		width: 14rem;
+
+	}
+	.img-iphon{
+		margin-left: 5rem;
+		width: 14rem;
+	}
+	.img-faceTime{
+		margin-left: 5rem;
+		width: 14rem;
+	}
+	.img-pregunta{
+		margin-left: 5rem;
+		width: 14rem;
+	}
+
+	.accordion-titulo span.toggle-icon {
+		position: absolute;
+		top: 10px;
+		right: -15px;
+		font-size: 38px;
+		font-weight: bold;
+		cursor: pointer;
+	}
+	.accordion-titulo span.toggle-icon {
+		position: absolute;
+		top: 10px;
+		right: -15px;
+		font-size: 38px;
+		font-weight: bold;
+		cursor: pointer;
+	}
+	.u__soporte{
+		position: inherit;
+		width: 100%;
+		height: 31vh;
+		background: transparent;
+		text-align: justify;
+		transition: all .5s;
+		z-index: 2;
+	}
+	.textQuienesSomos{
+		display: block;
+	}
+	#somos{
+		display: none;
+	}
+	.textQuienesSomos{
+		display: block!important;
+	}
+
+	.leyendaMV {
+		margin-left: 0rem;
+	}
+	.divMision p {
+		font-size: 20px;
+	}
+	.divMision {
+		margin-top: -13rem;
+		margin-left: -4rem;
+		font-size: 2px !important;
+		text-align: center;
+	}
+	#visionmisionhr {
+		margin-left: 0rem;
+	} 
+	#visionmisionhr2 {
+		border: 1px solid rgb(18, 57, 163);
+		margin-top: 1rem;
+		width: 60%;
+		margin-left: 12rem;
+	}
+	.gifMision {
+		margin-left: 2rem;
+	}
+	#mision {
+		margin-left: 3rem;
+		margin-top: -2rem;
+	}
+	.gifVision {
+		margin-right: 1rem;
+		float: right;
+	}
+	#pVision {
+		margin-top: 1rem;
+		font-size: 21px;
+		margin-left: -12rem;
+		padding-right: 1rem;
+	}
+	.h4Visi {
+		margin-top: -1rem;
+		margin-left: -12rem;
+		font-size: 33px;
+	}
+	#hrvision {
+		border: 1px solid black;
+		margin-top: -2rem;
+		width: 12%;
+		margin-left: -10rem;
+	}
+	#hrvision2 {
+		border: 3px solid red;
+		margin-top: -2.4rem;
+		width: 5%;
+		margin-left: -7rem;
+	}
+	#pMision {
+		margin-top: -1rem;
+		font-size: 21px;
+		margin-left: 0rem;
+		margin-right: 2rem;
+	  }
+	.carru__imga {
+		top: -2.2rem!important;
+	}	
+	.text_quienesSomos2 {
+		font-size: 20px !important;
+		margin-left: 13rem;
+	}
+	.textQuienesSomos{
+		margin-left: -11rem!important;
+		margin-top: 4rem!important;
+	}
+	.somo_text2{
+		font-size: 20px!important;
+		margin-top: -2rem!important;
+		margin-left: 13rem!important;
+		margin-bottom: -4rem;
+	}
+	#page-title.page-title-left.soporte p {
+		color: white !important;
+		font-size: 18px;
+		margin-top: 1rem;
+		margin-left: 2rem;
+	}
+	.img-somosBanner {
+		margin-left: 19rem;
+		margin-top: -22rem;
+		height: 18rem;
+		width: 18rem;
+	  }
+	  #page-title.page-title-left.soporte {
+		height: 38rem;
+	  }
+
 	/*Media Query Lalo*/
 }
 
@@ -11929,21 +12121,24 @@ body:not(.no-transition) #wrapper,
 			/* background-attachment: fixed; */
 			background-size: cover;
 			background-position: center;
-			height: 8rem;
+			/* height: 8rem; */
+			height: 18rem;
 		}
 		#page-title.page-title-left.soporte p{
 			color: white!important;
-			font-size: 13px!important;
+			font-size: 15px!important;
+			/* margin-top: -1rem;
+			margin-left: -124px; */
 			margin-top: -1rem;
-			margin-left: -124px;
+			margin-left: 1rem;
 		}
-		.img-soporte{
-			margin-left: 24rem;
+		.img-soporte {
+			margin-left: 17rem;
 			margin-top: -18rem;
-			height: 13rem;
-			width: 10rem;
+			height: 18rem;
+			width: 18rem;
 			opacity: 0.8;
-		}
+		  }
 		.btnsomos{
 			font-size: 9px;
 			margin-left: -11rem;
@@ -11957,7 +12152,7 @@ body:not(.no-transition) #wrapper,
 			/* background-attachment: fixed; */
 			background-size: cover;
 			background-position: center;
-			height: 9rem;
+			height: 19rem;
 		}
 
 		.img-paquetes {
@@ -11968,9 +12163,9 @@ body:not(.no-transition) #wrapper,
 		}
 
 		#page-title.page-title-left.paquete p{
-			font-size: 9px!important;
-			margin-top: -24rem;
-			margin-left: 5rem;
+			font-size: 22px!important;
+			margin-top: 0rem!important;
+			margin-left: 0rem!important;
 			color: #BBB;
 		}
 		#page-title.page-title-center.paquetes p{
@@ -11978,6 +12173,8 @@ body:not(.no-transition) #wrapper,
 		}
 		.text-package {
 			margin-left: -2rem;
+			margin-top: 15rem;
+			margin-right: 9rem;
 		}
 		.text-package {
 			text-align: justify !important;
@@ -12000,10 +12197,10 @@ body:not(.no-transition) #wrapper,
 
 		}
 		.btnsomos{
-			margin-left: 16rem;
-			width: 6rem;
+			margin-left: -8rem;
+			width: 9rem;
 			font-size: 11px;
-			margin-top: -8rem;
+			margin-top: -5rem;
 		}
 		.copyright-links a {
 			display: inline-block;
@@ -12023,7 +12220,7 @@ body:not(.no-transition) #wrapper,
 			margin-left: -149px;
 		}
 		#page-title.page-title-center.dudas p{
-			font-size: 13px!important;
+			font-size: 13px;
 			margin-bottom: 10rem;
 		}
 		#text-aviso{
@@ -12031,6 +12228,36 @@ body:not(.no-transition) #wrapper,
 		}
 		.pdf{
 			display: none;
+		}
+		.text_quienesSomos2 {
+			font-size: 20px !important;
+			margin-left: -11rem;
+		}
+		.textQuienesSomos {
+			margin-left: 13rem !important;
+			margin-top: 4rem !important;
+		}
+		.somo_text2 {
+			font-size: 20px !important;
+			margin-top: -2rem !important;
+			margin-left: -11rem !important;
+			margin-bottom: -4rem;
+			color: black;
+		}
+		#indexp, p {
+			margin-left: 11rem;
+			margin-right: 9rem;
+		}
+		#somos p{
+			color:#000;
+		}
+		.dud_text{
+			margin-left: 1rem;
+			margin-right: -12rem;
+			font-size: 18rem;
+		}
+		.dudText{
+			margin-top: -18rem;
 		}
 }
 
@@ -12043,6 +12270,9 @@ body:not(.no-transition) #wrapper,
 		top: -9rem!important;
 		height: 691px!important;
 		margin-bottom: -8rem!important;
+	}
+	.carru__imga {
+		top: -9rem !important;
 	}	
 	.cardRecarga {
 		border-radius: 30px;
@@ -12080,7 +12310,8 @@ body:not(.no-transition) #wrapper,
 	}
 	.logoA {
 		height: 78px;
-		margin-top: -4.5rem;
+		margin-top: -3rem;
+		/* margin-top: -4.5rem; */
 		width: 24rem !important;
 	  }
 	  .img_logo{
@@ -12109,15 +12340,20 @@ body:not(.no-transition) #wrapper,
 		margin-left: -15px;
 		margin-right: -40px;
 	}
+	.un_mision{
+		font-size: 27px!important;
+	}
 	#indexp, p{
-		font-size: 30px!important;
+		/* font-size: 30px!important; */
 		/* font-size: 38px; */
 		/* margin-left: 8rem!important; */
-		margin-top: 13rem !important;
+		margin-left: -1rem;
+		font-size: 27px !important;
+		margin-top: 14rem !important;
 	}
 	.img-index2 {
 		margin-left: 52rem;
-		margin-top: -35rem;
+		margin-top: -29rem;
 		height: 35rem;
 		width: 34rem;
 	}
@@ -12335,7 +12571,7 @@ body:not(.no-transition) #wrapper,
 	  }
 	  #somos p {
 		font-size: 25px;
-		margin-top: 2rem;
+		margin-top: 2rem!important;
 		margin-left: 2px;
 	  }
 	  .text_quienesSomos {
@@ -12357,7 +12593,174 @@ body:not(.no-transition) #wrapper,
 		color: red;
 		height: 4rem;
 	}
-
+	.img-sim{
+		margin-left: 46rem;
+		margin-top: -12rem;
+	}
+	.img-red{
+		margin-left: 52rem;
+		margin-top: -32rem;
+		width: 14rem;
+	}
+	.img-iphon{
+		width: 16%;
+		margin-left: 58rem;
+		margin-top: -18rem;
+	}
+	.img-faceTime{
+		width: 21%;
+		float: right;
+		margin-top: -22rem;
+		margin-right: -19rem;
+	}
+	.img-pregunta{
+		width: 24%;
+		float: right;
+		margin-top: -112rem;
+		margin-right: -18rem;
+	}
+	.form_soporte{
+		margin-left: 25rem;
+		margin-top: 2rem;
+	}
+	.buscador{
+		width: 60rem!important;
+	}
+	.div_form {
+		margin-left: 0rem;
+		margin-right: 0rem;
+	}
+	.btn-outline-success {
+		margin-left: 5rem;
+		margin-bottom: 0rem;
+	}
+	.img-soporte {
+		margin-left: 71rem;
+		margin-top: -22rem;
+		height: 30rem;
+		width: 30rem;
+		opacity: 0.8;
+	  }
+	.accordion-titulo span.toggle-icon {
+		position: absolute;
+		top: 10px;
+		right: 20px;
+		font-size: 38px;
+		font-weight: bold;
+		cursor: pointer;
+	}
+	.u__soporte {
+		position: inherit;
+		width: 68%;
+		height: 17vh;
+		background: transparent;
+		text-align: justify;
+		transition: all .5s;
+		z-index: 2;
+	}
+	#somos{
+		display: block;
+	}
+	.textQuienesSomos{
+		display: none!important;
+	}
+	#visionmisionhr {
+		margin-top: -4rem;
+		width: 60%;
+		margin-left: 0rem;
+	}
+	.h4VisiMis {
+		font-size: 33px;
+	}
+	#hrmision {
+		border: 1px solid black;
+		margin-top: -3rem;
+		width: 17%;
+		margin-left: 0rem;
+	}
+	#hrmision2 {
+		border: 3px solid red;
+		margin-top: -2.4rem;
+		width: 7%;
+		margin-left: 14rem;
+	}
+	#mision {
+		margin-left: 52rem;
+		margin-top: -19rem;
+	}
+	.gifMision {
+		height: 37rem;
+		width: 34rem;
+		margin-left: 13rem;
+	}
+	#vision {
+		margin-left: 16rem;
+		margin-top: -10rem;
+		/* margin-top: 14rem; */
+	}
+	.gifVision {
+		height: 37rem;
+		width: 34rem;
+		margin-right: 13rem;
+		float: right;
+	}
+	#page-title.page-title-left.soporte {
+		margin-top: -1rem;
+		background-image: url("images/Banner.jpg");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		background-position: center;
+		height: 27rem;
+	}
+	.t_saldo {
+		font-size: 31px;
+		font-size: 38px;
+		margin-left: 7rem;
+		margin-top: 14rem;
+		margin-right: 0rem;
+		margin-top: -4rem;
+		margin-right: -5rem;
+		font-size: 29px !important;
+	}
+	.btnsomos {
+		margin-left: 9rem;
+		width: 13rem;
+		font-size: 17px;
+		margin-top: -2rem;
+	}
+	.img-somosBanner {
+		margin-left: 69rem;
+		margin-top: -29rem;
+		height: 35rem;
+		width: 54rem;
+	}
+	.divMision {
+		margin-top: -13rem;
+		margin-left: 2rem;
+		text-align: 2px !important;
+		text-align: center;
+	}
+	#visionmisionhr2 {
+		margin-left: 48rem;
+	}
+	#page-title.page-title-left.soporte p {
+		color: white !important;
+		font-size: 20px;
+		margin-top: -3rem;
+		margin-left: 9rem;
+	}
+	/* .img-somosBanner {
+		margin-left: 69rem;
+		margin-top: -29rem;
+		height: 35rem;
+		width: 54rem;
+	  } */
+	  /* .eresAlt {
+		margin-top: 6rem !important;
+		margin-left: -1rem;
+		font-size: 32px !important;
+	  } */
 
 }
 
@@ -12396,7 +12799,8 @@ body:not(.no-transition) #wrapper,
 	}
 	.logoA {
 		height: 78px;
-		margin-top: -4.5rem;
+		margin-top: -3rem;
+		/* margin-top: -4.5rem; */
 		width: 24rem !important;
 	}
 	.img_logo{
@@ -12607,6 +13011,77 @@ body:not(.no-transition) #wrapper,
 	.img-index1 {
 		margin-left: 82rem;
 	}
+	.img-sim{
+		margin-left: 61rem;
+		margin-top: -10rem;
+	}
+	.img-red{
+		margin-left: 67rem;
+		margin-top: -34rem;
+		width: 14rem;
+	}
+	.img-iphon{
+		width: 15%;
+		margin-left: 69rem;
+		margin-top: -15rem;
+	}
+	.img-faceTime{
+		width: 15%;
+		float: right;
+		margin-top: -3rem;
+	}
+	.img-pregunta{
+		width: 16%;
+		float: right;
+		margin-top: -83rem;
+	}
+	.form_soporte{
+		margin-left: 25rem;
+		margin-top: 2rem;
+	}
+	.buscador{
+		width: 60rem
+	}
+	.accordion-titulo span.toggle-icon {
+		position: absolute;
+		top: 10px;
+		right: 20px;
+		font-size: 38px;
+		font-weight: bold;
+		cursor: pointer;
+	  }
+	  .img-sim {
+		margin-left: 58rem;
+		margin-top: -12rem;
+	}
+	.img-red {
+		margin-left: 66rem;
+		margin-top: -32rem;
+		width: 14rem;
+	}
+	.img-iphon {
+		width: 16%;
+		margin-left: 67rem;
+		margin-top: -18rem;
+	}
+	.img-faceTime {
+		width: 21%;
+		float: right;
+		margin-top: -22rem;
+		margin-right: -23rem;
+	}
+	.img-pregunta {
+		width: 24%;
+		float: right;
+		margin-top: -96rem;
+		margin-right: -18rem;
+	}
+	.textQuienesSomos{
+		display: none!important;
+	}
+	.divMision {
+		margin-left: -10rem;
+	  }
 }
 
 @media(min-width: 1440px){
@@ -12657,7 +13132,8 @@ body:not(.no-transition) #wrapper,
 	}
 	.logoA {
 		height: 78px;
-		margin-top: -4.5rem;
+		margin-top: -3rem;
+		/* margin-top: -4.5rem; */
 		width: 24rem !important;
 	  }
 	  .img_logo{
@@ -12842,7 +13318,7 @@ body:not(.no-transition) #wrapper,
 		margin-top: -50px!important;
 	}
 	.mov-redes_soc {
-		margin-left: 99rem!important;
+		margin-left: 98rem!important;
 		margin-top: -50px!important;
 	}
 	.container__footer {
@@ -12866,6 +13342,74 @@ body:not(.no-transition) #wrapper,
 	.img-index1 {
 		margin-left: 87rem;
 	}
+	.img-sim{
+		margin-left: 64rem;
+		margin-top: -10rem;
+	}
+	.img-red{
+		margin-left: 72rem;
+		margin-top: -31rem;
+		width: 14rem;
+	}
+	.img-iphon{
+		width: 13%;
+		margin-left: 75rem;
+		margin-top: -20rem;
+	}
+	.img-faceTime{
+		width: 15%;
+		float: right;
+		margin-top: -3rem;
+	}
+	.img-pregunta{
+		width: 16%;
+		float: right;
+		margin-top: -83rem;
+	}
+	.form_soporte{
+		margin-left: 25rem;
+		margin-top: 2rem;
+	}
+	.buscador{
+		width: 60rem
+	}
+	.accordion-titulo span.toggle-icon {
+		position: absolute;
+		top: 10px;
+		right: 20px;
+		font-size: 38px;
+		font-weight: bold;
+		cursor: pointer;
+	  }
+	  .img-sim {
+		margin-left: 63rem;
+		margin-top: -12rem;
+	}
+	.img-red {
+		margin-left: 71rem;
+		margin-top: -32rem;
+		width: 14rem;
+	}
+	.img-iphon {
+		width: 16%;
+		margin-left: 74rem;
+		margin-top: -16rem;
+	}
+	.img-faceTime {
+		width: 21%;
+		float: right;
+		margin-top: -20rem;
+		margin-right: -27rem;
+	}
+	.img-pregunta {
+		width: 24%;
+		float: right;
+		margin-top: -96rem;
+		margin-right: -27rem;
+	}
+	.textQuienesSomos{
+		display: none!important;
+	}
 }
 
 @media(min-width: 1920px){
@@ -12879,6 +13423,16 @@ body:not(.no-transition) #wrapper,
 	}
 	#btnIndex {
 		margin-left: 8rem !important;
+	}
+	.t_sopor {
+		font-size: 31px;
+		font-size: 42px !important;
+		margin-left: 7rem;
+		margin-top: 14rem !important;
+		margin-right: 0rem;
+		margin-top: -4rem;
+		margin-right: -5rem;
+		font-size: 29px;
 	}
 	.cardRecarga {
 		border-radius: 30px;
@@ -12899,7 +13453,7 @@ body:not(.no-transition) #wrapper,
 	}
 	.logoA {
 		height: 78px;
-		margin-top: -4.5rem;
+		margin-top: -3rem;
 		width: 24rem !important;
 	  }
 	  .img_logo{
@@ -12923,11 +13477,29 @@ body:not(.no-transition) #wrapper,
 		margin-left: 5rem !important;
 	}
 	#indexp, p{
-		font-size: 31px;
+		/* font-size: 40px!important; */
 		/* font-size: 38px; */
-		margin-left: 8rem;
-		margin-top: 14rem;
+		margin-left: 8rem!important;
+		margin-top: 17rem!important;
 	}
+	.dud_text{
+		margin-left: 0rem !important;
+		margin-top: 10rem !important;
+	}
+	.un_mision{
+		font-size: 40px!important;
+	}
+	#page-title.page-title-left.soporte {
+		height: 30rem;
+	}
+
+	.img-soporte {
+		margin-left: 71rem;
+		margin-top: -31rem;
+		height: 37rem;
+		width: 37rem;
+		opacity: 0.8;
+	  }
 	.hrIndex{
 		width: 27%;
 		margin-left: 7rem;
@@ -13103,7 +13675,7 @@ body:not(.no-transition) #wrapper,
 	.text-justify {
 		text-align: justify;
 		margin-left: 8rem !important;
-		margin-top: 17rem !important;
+		margin-top: 3rem !important;
 		margin-right: -13rem;
 	}
 	.img-index1 {
@@ -13111,6 +13683,58 @@ body:not(.no-transition) #wrapper,
 	}
 	.img-index2 {
 		margin-left: 97rem;
+	}
+	.img-sim{
+		margin-left: 76rem;
+		margin-top: -10rem;
+	}
+	.img-red{
+		margin-left: 87rem;
+		margin-top: -22rem;
+		width: 14rem;
+	}
+	.img-iphon{
+		width: 10%;
+		margin-left: 90rem;
+		margin-top: -10rem;
+	}
+	.img-faceTime{
+		width: 15%;
+		float: right;
+		margin-top: -19rem;
+		margin-right: -17rem;
+	}
+	.img-pregunta{
+		width: 16%;
+		float: right;
+		margin-top: -83rem;
+		margin-right: -17rem;
+	}
+	.form_soporte{
+		margin-left: 25rem;
+		margin-top: 2rem;
+	}
+	.buscador{
+		width: 60rem
+	}
+	.accordion-titulo span.toggle-icon {
+		position: absolute;
+		top: 10px;
+		right: 20px;
+		font-size: 38px;
+		font-weight: bold;
+		cursor: pointer;
+	}
+	#somos {
+		margin-left: 10rem;
+		margin-top: 24rem;
+	}
+	.text_quienesSomos {
+		font-size: 37px !important;
+		margin-left: 7rem;
+	}
+	.textQuienesSomos{
+		display: none;
 	}
 }
 
@@ -13224,8 +13848,8 @@ nav .indicador {
 
 
  .nav_bar{
-	/* background: #c71326; */
-	background: #0A0D2D!important;
+	/* background: #0A0D2D!important; */
+	background: #a40a19!important;
 	margin-top: -2rem;
 	box-shadow: 4px 4px 30px #666;
 	/* box-shadow: 0px 0px 23px #666; */
@@ -13262,7 +13886,7 @@ nav .indicador {
 	display: inline-block;
 	line-height: 80px;
 	margin: 0 5px;
-	margin-top: -2rem;
+	margin-top: 0rem;
  }
  nav ul li a{
 	color: white!important;
@@ -13377,9 +14001,9 @@ nav .indicador {
 		font-size: 21px!important;
 		/* margin-top: -5px; */
 	}
- }
+}
 
- .fab {
+.fab {
 padding: 20px;
 font-size: 30px;
 width: 30px;
@@ -13407,6 +14031,7 @@ color: white;
 	width: 20rem !important;
 	height: 30.2rem !important;
 	transition: all .3s ease;
+	border-color: #eb0001;
 	 /* clip-path: polygon(0 0, 0% 20%, 0 42%, 0 100%, 20% 100%, 56% 100%, 68% 83%, 100% 83%, 100% 50%, 100% 20%, 100% 0, 52% 0); */
 	 /* clip-path: polygon(0 0, 0% 20%, 0 42%, 0 100%, 20% 100%, 56% 100%, 68% 75%, 100% 75%, 100% 50%, 100% 20%, 100% 0, 52% 0); */
 	 /* clip-path: polygon(0 0, 0% 20%, 0 42%, 0 100%, 20% 100%, 56% 100%, 68% 75%, 100% 75%, 100% 50%, 100% 20%, 100% 0, 52% 0); */
@@ -13439,7 +14064,8 @@ color: white;
  .cent-mt{
 	/* background-color: #0a2153!important; */
 	border-radius: 10px;
-	border: #7f71ea 1px solid;
+	border: #eb0001 1px solid;
+	/* border: #7f71ea 1px solid; */
 	height: 30rem;
 	transition-duration: 1000ms;
 	color: #0a2153!important;
@@ -13449,6 +14075,7 @@ color: white;
  }
 
  div.cent-mt:hover {
+	/* background-color: #25668F!important; */
 	background-color: #0a2153!important;
 	transition-duration: 500ms!important;
 	color: white!important;
@@ -13583,7 +14210,7 @@ color: white;
  }
 
  .eresAlt{
-	margin-top: 6rem!important;
+	margin-top: 6rem;
 	margin-left: -1rem;
 	font-size: 32px!important;
  }

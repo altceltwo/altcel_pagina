@@ -19,7 +19,7 @@
 
         </div>
       </div>
-      <img  src="{!! asset('images/Sintítulo2.png') !!}" alt="img-celular" class="img-paquetes">
+      <img  src="{!! asset('images/onda-roja.png') !!}" alt="img-celular" class="img-paquetes">
       <br>
       <img  src="{!! asset('images/Social-network-2.gif') !!}" alt="img-celular" class="img-socialNetwork">
   

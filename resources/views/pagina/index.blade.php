@@ -79,15 +79,15 @@
     <div class="container clearfix">
       <div class="row plan__paquet" >
         <a href="{!! URL::to('planes') !!}" class="btn btnIndexOpt btn-informacion" >
-          <img class="icon-index" src="{!! asset('images/paquete.gif') !!}" alt="Paquetes">
+          <img class="icon-index" src="{!! asset('images/Telefono3.png') !!}" alt="Paquetes">
           <h2 class="paquete pat__paquete">Paquetes</h2>
         </a>
         <a href="https://altcel2.com/" class="btn btnIndexOpt btn-informacion" >
-          <img class="icon-index" src="{!! asset('images/internet.gif') !!}" alt="Internet">
+          <img class="icon-index" src="{!! asset('images/internet1.png') !!}" alt="Internet">
           <h2 class="paquete">Internet</h2>
         </a>
         <a href="{!! URL::to('soporte') !!}" class="btn btnIndexOpt btn-informacion" >
-          <img class="icon-index" src="{!! asset('images/soporte.gif') !!}" alt="Soporte">
+          <img class="icon-index" src="{!! asset('images/Configuracion.png') !!}" alt="Soporte">
           <h2 class="paquete">Soporte</h2>
         </a>
       </div>

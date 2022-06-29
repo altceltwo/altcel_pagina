@@ -115,14 +115,14 @@
 
 
 	<!-- Document Wrapper ============================================= -->
-	<div id="wrapper" class="clearfix">
+	<div id="wrapper" class="clearfix ">
 
 		<!-- Header============================================= -->
 		<header id="header" class=" transparent-header {{(request() -> is ('/*') ) ? 'header__carru' : ''}}" data-sticky-class="not-dark">
 
 
 
-			<nav class="nav__color {{(request() -> is ('recargas*') ) || (request() -> is ('planes*')) || (request() -> is ('soporte*')) ? 'nav_bar' : ''}}">
+			<nav class="nav__color {{(request() -> is ('recargas*') ) || (request() -> is ('/*')) || (request() -> is ('planes*')) || (request() -> is ('quienesomos*')) || (request() -> is ('soporte*')) ? 'nav_bar' : ''}}">
 				<!-- <input type="checkbox" class="mobile-menu" id="mobile-menu"> -->
 				<input type="checkbox" id="check">
 				<label for="check" class="checkbtn">
@@ -347,6 +347,24 @@
 
 
 <script >
+	var windowHeight = $(window).height();
+    var barraAltura = $('.nav_bar').innerHeight();
+    $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+		console.log(windowHeight);
+        if(scroll){
+            $('.nav_bar').addClass('fixed');
+            $('.enlaces__mov1').addClass('fixed_color');
+            $('body').css({'margin-top': barraAltura+'px'});
+        }
+		else{
+            $('.nav_bar').removeClass('fixed');
+            $('body').css({'margin-top': '0px'});
+        }
+        
+    });
+
+
 	function eventListeners() {
     const mobileMenu = document.querySelector('.mobile-menu');
 	alert("hola");

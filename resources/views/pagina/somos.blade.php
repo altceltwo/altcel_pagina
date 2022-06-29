@@ -3,21 +3,19 @@
 @section('content')
 <!-- Page Title
   ============================================= -->
-  <section id="slider"  class="slider-element slider-parallax swiper_wrapper full-screen clearfix">
+  <section id="slider"  class="slider-element slider-parallax swiper_wrapper full-screen clearfix {{(request() -> is ('quienesomos*') ) ? 'carru__imga' : ''}}">
     <div class="slider-parallax-inner">
 
-      <div class="swiper-container swiper-parent cambio_img" style="background-image: url('images/nosotros2.jpg') ; background-size: cover;background-repeat: no-repeat;">
+      <div class="swiper-container swiper-parent cambio_img" style="background-image: url('images/QuienesSomos.jpg') ; background-size: cover;background-repeat: no-repeat;">
         <div class="swiper-wrapper">
           <div class="swiper-slide dark img__somos" >
             <div class="col_one_third" id="somos">
-
               <div >
                 <h3 class="text_quienesSomos"><strong>¿Quiénes somos?</strong></h3>
               </div>
               <p class="text-justify somo_text">
                 Somos una empresa especializada en comercializar productos y servicios en el ramo de telecomunicaciones.
-                </p>
-  
+              </p>
             </div>
           </div>
         </div>
@@ -30,10 +28,18 @@
   <!-- Page Title
   ============================================= -->
   <section id="content">
+      <div class="col_one_third textQuienesSomos" id="somos">
+        <div >
+          <h3 class="text_quienesSomos2"><strong>¿Quiénes somos?</strong></h3>
+        </div>
+        <p class="text-justify somo_text2">
+          Somos una empresa especializada en comercializar productos y servicios en el ramo de telecomunicaciones.
+        </p>
+      </div>
     <div class="content-wrap">
       <hr id="visionmisionhr">
       <div class=" divMision">
-        <p style="font-size: 15px">Una <span class="spanSomos">misión</span> nunca podrá cumplirse <br><span class="leyendaMV" style="text-align: center"> si no se tiene un <span class="spanSomos">visión...</span></span></p>
+        <p class="un_mision">Una <span class="spanSomos">misión</span> nunca podrá cumplirse <br><span class="leyendaMV" style="text-align: center"> si no se tiene un <span class="spanSomos">visión...</span></span></p>
       </div>
       <hr id="visionmisionhr2">
 

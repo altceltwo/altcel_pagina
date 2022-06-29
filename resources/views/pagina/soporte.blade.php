@@ -7,9 +7,10 @@
 
     <div class="container clearfix" >
       <h1>¿Tienes alguna pregunta?</h1>
-      <form class="form-inline " style="margin-left: 25rem; margin-top: 2rem">
+      <form class="form-inline form_soporte">
+      <!-- <form class="form-inline " style="margin-left: 25rem; margin-top: 2rem"> -->
         <button style="background-color: #ffffff" class="btn btn-outline-success " type="submit"><i class="icon-search3"></i></button>
-        <input style="width: 60rem" class="form-control " type="search" placeholder="Buscar en la preguntas..." aria-label="Buscar en las preguntas...">
+        <input class="form-control buscador" type="search" placeholder="Buscar en la preguntas..." aria-label="Buscar en las preguntas...">
       </form>
       {{-- <div class="input-group" style="margin-left: 25rem; margin-top: 2rem">
           <input style="width: 60rem" class="form-control " type="search" placeholder="Buscar en la preguntas..." aria-label="Buscar en las preguntas...">
@@ -19,64 +20,73 @@
 
   </section><!-- #page-title end -->
 
-  <div class="row" style="margin: 30px">
-    <div class="col-md-12">
+  <div class="row" style="margin: 30px; margin-left: 25rem;">
+    <div class="col-md-10">
       <table>
-        <div class="col-md-12" style="border: 2px rgb(161, 158, 158) solid; border-radius: 10px; align-content: center">
+        <div class="col-md-12 div_form" style="border: 2px rgb(161, 158, 158) solid; border-radius: 10px; align-content: center">
           <div class="accordion-container">
-            <a href="#" class="accordion-titulo">Activación<span class="toggle-icon"></span></a>
+            <div class="accordion-titulo">Activación<span class="toggle-icon"></span></div>
+            <!-- <a href="#" class="accordion-titulo">Activación<span class="toggle-icon"></span></a> -->
             <div class="accordion-content" id="activacion">
-              <ul style="list-style: none">
+              <ul style="list-style: none" class="u__soporte">
                 <li>Inserta tu SIM Altcel dentro del equipo según tamaño</li>
                 <li>Enciende tu equipo</li>
                 <li>Te llegará un mensaje de texto con tu nuevo número Altcel</li>
                 <li>Realiza una primera recarga para que con esto tu servicio quede activo y listo para su uso.</li>
+                <img class="img-sim" src="{!! asset('images/sim.gif') !!}" alt="Altcel">
               </ul>
             </div>
           </div>
   
           <div class="accordion-container">
-            <a href="#" class="accordion-titulo">Configuración de internet Android<span class="toggle-icon"></span></a>
+            <div class="accordion-titulo">Configuración de internet Android<span class="toggle-icon"></span></div>
+            <!-- <a href="#" class="accordion-titulo">Configuración de internet Android<span class="toggle-icon"></span></a> -->
             <div class="accordion-content" id="configAndroid">
-              <ul style="list-style: none">
+              <ul style="list-style: none" class="u__soporte">
                 <li>Dirigete a <strong>configuración </strong> o ajustes dentro del menú de tu teléfono y seleccionalo</li>
                 <li>En la sección de "<strong>Conexiones inalámbricas y redes" </strong> Selecciona <strong>Redes móviles.</strong></li>
                 <li>Selecciona <strong>nombres de punto de acceso.</strong></li>
                 <li>Selecciona simbolo "<strong>+</strong>"</li>
                 <li>Ingresa los siguienetes datos en las casillas correspondientes, serán los únicos datos a ingresar: <br> <strong>Nombre:</strong>altcel <br><strong>APN:</strong>internet.mvnel.com <br>Guarda y seleciiona como <strong>APN:</strong></li>
+                <img class="img-red" src="{!! asset('images/red.gif') !!}" alt="Altcel">
               </ul>
             </div>
           </div>
   
           <div class="accordion-container">
-            <a href="#" class="accordion-titulo">Configuración de internet Iphone<span class="toggle-icon"></span></a>
+            <div class="accordion-titulo">Configuración de internet Iphone<span class="toggle-icon"></span></div>
+            <!-- <a href="#" class="accordion-titulo">Configuración de internet Iphone<span class="toggle-icon"></span></a> -->
             <div class="accordion-content" id="configIphone">
-              <ul style="list-style: none">
+              <ul style="list-style: none" class="u__soporte">
                 <li>Conéctate a internet vía Wifi ya que es necesario para poder configurar tu dispositivo</li>
                 <li>Dirígete a tu navegador web "Safari" e ingresa la siguiente dirección: www.altcel.com/apnios</li>
                 <li>En automático descargará la configuración para tu iPhone</li>
                 <li>Seleccione instalar una vez finalizada la instalación estás listo para disfrutar de tu servicio.</li>
+                <img class="img-iphon" src="{!! asset('images/iphone2.gif') !!}" alt="Altcel">
               </ul>
             </div>
           </div>
   
           <div class="accordion-container">
-            <a href="#" class="accordion-titulo">Agregar tu número de teléfono en mensajes o FaceTime<span class="toggle-icon"></span></a>
+            <div class="accordion-titulo">Agregar tu número de teléfono en mensajes o FaceTime<span class="toggle-icon"></span></div>
+            <!-- <a href="#" class="accordion-titulo">Agregar tu número de teléfono en mensajes o FaceTime<span class="toggle-icon"></span></a> -->
             <div class="accordion-content" id="telefono">
-              <ul style="list-style: none">
+              <ul style="list-style: none" class="u__soporte">
                 <li>Ve a Configuración > Mensajes y asegúrate de que ¡Message esté activado. Es posible que debas esperar un momento hasta que se active.</li>
                 <li>Toca Enviar y recibir. Si ves el mensaje "Usar tu Apple ID para iMessage", tócalo e inica sesión con la misma Apple ID que usas en la Mac, el iPad y el iPod touch.</li>
                 <li>En la sección "Puedes recibir mensajes de ¡Message", asegúrate de que tu número de teléfono y tu Apple ID estén seleccionados.</li>
                 <li>Ve a Configuración>FaceTime y en la sección "Se te puede contactar por FaceTime en", asegúrate de que tu número de teléfono y tu Apple ID estén seleccionados.</li>
                 <li>Activar el botón de enviar como SMS</li>
+                <img class="img-faceTime" src="{!! asset('images/faceTime.gif') !!}" alt="Altcel">
               </ul>
             </div>
           </div>
   
           <div class="accordion-container">
-            <a href="#" class="accordion-titulo">Preguntas frecuentes<span class="toggle-icon"></span></a>
+            <div class="accordion-titulo">Preguntas frecuentes<span class="toggle-icon"></span></div>
+            <!-- <a href="#" class="accordion-titulo">Preguntas frecuentes<span class="toggle-icon"></span></a> -->
             <div class="accordion-content" id="preguntas">
-              <ul style="list-style: none">
+              <ul style="list-style: none" class="u__soporte">
                 <li><h3>¿Qué es ALTCEL</h3></li>
                 <li>Altcel es un proveedor de servicios móviles de voz, sms, datos y roaming.</li>
                 <li><h3>¿Dónde adquiero mi SIM Altcel?</h3></li>
@@ -96,16 +106,18 @@
                 <li>Cualquier teléfono móvil en México marca sin costo al 800-2-ALTCEL en un horario de Lunes a Viernes de 08:30 a 18:30 hrs. Sábados de 10:00 a 14:30 hrs.</li>
                 <li>Vía correo electrónico en: contacto@altcel.com</li>
                 <li>La página web en https://altcel.com/</li>
+                <img class="img-pregunta" src="{!! asset('images/pregunta.gif') !!}" alt="Altcel">
               </ul>
             </div>
           </div>
   
           <div class="accordion-container">
-            <a href="#" class="accordion-titulo">Contacto<span class="toggle-icon"></span></a>
+            <div class="accordion-titulo">Contacto<span class="toggle-icon"></span></div>
+            <!-- <a href="#" class="accordion-titulo">Contacto<span class="toggle-icon"></span></a> -->
             <div class="accordion-content" id="cotacto">
-              <ul>
+              <ul class="u__soporte">
                 <li>Medios de Contacto para Dudas y/o Aclaraciones comunicarse desde:</li>
-                <ul style="list-style: none">
+                <ul style="list-style: none" class="u__soporte">
                   <li>Teléfono móvil ALTCEL al *282 sin costo en un horario de Lunes a Viernes de 08:30 a 18:30 hrs. Sábados de 10:00 a 14:30 hrs.</li>
                   <li>Cualquier teléfono móvil en México marca sin costo al 800-2-ALTCEL en un horario de Lunes a Viernes de 08:30 a 18:30 hrs. Sábados de 10:00 a 14:30 hrs.</li>
                   <li>Vía correo electrónico en: contacto@altcel.com</li>
@@ -121,8 +133,8 @@
 
   <section id="page-title" class="page-title-center dudas">
 
-    <div class="container clearfix" style="margin-top: 30px">
-        <p><strong>¿Aún tienes alguna duda?</strong><br> Si no pudiste encontrar tu respuesta, recuerda que siempre puedes contactarnos. <br> Te responderemos a la brevedad.</p>
+    <div class="container clearfix dudText" >
+        <p class="dud_text"><strong>¿Aún tienes alguna duda?</strong><br> Si no pudiste encontrar tu respuesta, recuerda que siempre puedes contactarnos. <br> Te responderemos a la brevedad.</p>
     </div>
 
 </section><!-- #page-title end -->
@@ -131,7 +143,7 @@
 <section id="page-title" class="page-title-left soporte">
 
   <div class="container clearfix">
-    <p>¿Te quedaste sin saldo? Consulta tu <br> plan favorito y <strong>recarga desde $10.00</strong></p>
+    <p class="t_sopor">¿Te quedaste sin saldo? Consulta tu <br> plan favorito y <strong>recarga desde $10.00</strong></p>
     <button class="btn btnsomos"><a href="https://api.whatsapp.com/send?phone=525612010013&app=facebook&entry_point=page_cta">Recarga</a></button>
     <img src="{!! asset('images/1.png') !!}" class="img-soporte" alt="" >
   </div>
