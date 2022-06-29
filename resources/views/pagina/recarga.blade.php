@@ -49,17 +49,17 @@
                                         <option value="20">$ 20</option>
                                         <option value="30">$ 30</option>
                                         <option value="50">$ 50</option>
-                                        <option value="60">$ 60</option>
-                                        <option value="69">$ 69</option>
+                                        {{-- <option value="60">$ 60</option>
+                                        <option value="69">$ 69</option> --}}
                                         <option value="80">$ 80</option>
-                                        <option value="99">$ 99</option>
+                                        {{-- <option value="99">$ 99</option> --}}
                                         <option value="100">$ 100</option>
-                                        <option value="199">$ 199</option>
+                                        {{-- <option value="199">$ 199</option> --}}
                                         <option value="200">$ 200</option>
-                                        <option value="299">$ 299</option>
+                                        {{-- <option value="299">$ 299</option>
                                         <option value="300">$ 300</option>
                                         <option value="499">$ 499</option>
-                                        <option value="500">$ 500</option>
+                                        <option value="500">$ 500</option> --}}
                                    </select>
                               </fieldset>
                          </div>
@@ -93,9 +93,14 @@
      </section>
 </div>
 
-<div id="conektaIframeContainer" class="d-none" style="height: 700px;"></div>
+<div class="modal" id="modal-Conekta" style="width: 18rem;">
+     <div class="card-body">
+          <div id="conektaIframeContainer" class="d-none" style="height: 700px;"></div>
+     </div>
+   </div>
 
-<div class="modal" id="modal-ticket" tabindex="-1" style="width: 50rem;; background-color:white;margin-left: 49rem;">
+
+<div class="modal" id="modal-ticket" tabindex="-1">
    <div class="content" style="margin: 5rem;">
         <div class="row justify-content-center">
           <div class="col-8 text-center">
@@ -252,13 +257,15 @@
                               // timer: 2000
                          });
                     }else{
+                         $("#modal-Conekta").modal("show");
                          // console.log(response.checkout.id)
                          // return false;
                          var checkoutRequestId = response.checkout.id;
                          window.ConektaCheckoutComponents.Integration({
                               targetIFrame: "#conektaIframeContainer",
                               checkoutRequestId: checkoutRequestId, // checkout request id
-                              publicKey: "key_WNqM3nJHo3J83tsXxrTxB3A",
+                              // publicKey: "key_WNqM3nJHo3J83tsXxrTxB3A", //produccion
+                              publicKey: "key_KUxx4Sd9v8RiryYp27quVVA", //pruebas
                               options: {},
                               styles: {},
                               onFinalizePayment: function(event){
