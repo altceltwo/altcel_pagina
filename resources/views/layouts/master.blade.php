@@ -350,7 +350,7 @@
 	var windowHeight = $(window).height();
     var barraAltura = $('.nav_bar').innerHeight();
     $(window).scroll(function(){
-        var scroll = $(window).scrollTop();
+        var scroll = $(window > windowHeight).scrollTop();
 		console.log(windowHeight);
         if(scroll){
             $('.nav_bar').addClass('fixed');

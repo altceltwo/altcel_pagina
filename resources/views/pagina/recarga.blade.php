@@ -2,9 +2,9 @@
 
 @section('content')
 <div class="img-fon">
-     <img class="img-cel__recarg" src="{!! asset('images/cell-recarg.png') !!}" alt="Altcel">
+     <!-- <img class="img-cel__recarg" src="{!! asset('images/cell-recarg.png') !!}" alt="Altcel">
      <img class="img-barra1" src="{!! asset('images/barra1.png') !!}" alt="Altcel">
-     <img class="img-barra2" src="{!! asset('images/barra2.png') !!}" alt="Altcel">
+     <img class="img-barra2" src="{!! asset('images/barra2.png') !!}" alt="Altcel"> -->
      <!-- Page Title 
   ============================================= -->
 
@@ -95,7 +95,7 @@
 
 <div class="modal" id="modal-Conekta" style="width: 18rem;">
      <div class="card-body">
-          <div id="conektaIframeContainer" class="d-none" style="height: 700px;"></div>
+          <div id="conektaIframeContainer" class="d-none" style="height: 700px;"> <h1>hola</h1></div>
      </div>
    </div>
 

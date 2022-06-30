@@ -33,7 +33,7 @@
                   <div class="card-body color-tar cent-mt">
                       <hr class="hrPackage">
                       <li class="li-card">Paquete: <strong>7 días</strong></li>
-                      <li class=" li-card vel-package price">500 mb</li>
+                      <li class=" li-card vel-package price">500 MB</li>
                       <hr class="hrPackage">
                       <li class="li-card">Min / SMS / Ilimitados*</li>
                       <li class="li-card">WhatsApp Ilimitado*</li>
@@ -121,7 +121,7 @@
                   <div class="card-body color-tar cent-mt">
                       <hr class="hrPackage">
                       <li class="li-card">Paquete: <strong>33 días</strong></li>
-                      <li class=" li-card vel-package price">10 gb</li>
+                      <li class=" li-card vel-package price">10 GB</li>
                       <hr class="hrPackage">
                       <li class="li-card">Min / SMS / Ilimitados*</li>
                       <li class="li-card">WhatsApp Ilimitado*</li>
