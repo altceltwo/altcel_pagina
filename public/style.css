@@ -11645,7 +11645,8 @@ body:not(.no-transition) #wrapper,
 		margin-top: -2.5rem;
 		margin-right: -3rem;
 		border: 1.5px solid #fd15329e!important;
-		height: 9.8rem;
+		height: 7.8rem;
+		margin-bottom: 4rem;
 	  }
 	  #recargar {
 		align-content: center !important;
@@ -11741,6 +11742,12 @@ body:not(.no-transition) #wrapper,
 		  padding-left: 0rem;
 		height: 3.2rem;
 		background-color: #e1e1e1;
+		/* opacity: 0.7;
+		color: black; */
+	  }
+	  .input-dis::placeholder{
+		opacity: 0.7;
+		color: black;
 	  }
 	  .link_soport{
 		margin-top: -3rem!important;
@@ -11978,7 +11985,7 @@ body:not(.no-transition) #wrapper,
 		padding: 1rem !important;
 		margin-top: -3rem;
 		margin-right: -3rem;
-		border: 1.5px solid #7f71ea69 !important;
+		border: 1.5px solid #fd15329e!important;
 	  }
 	  .camp_a {
 		margin-right: 6% !important;
@@ -12442,6 +12449,8 @@ body:not(.no-transition) #wrapper,
 		margin-top: 1rem!important;
 		margin-right: -7rem!important;
 		border: 1.5px solid #fd15329e!important;
+		height: 8.9rem;
+		margin-bottom: 3rem;
 	}
 
 	.input-dis {
