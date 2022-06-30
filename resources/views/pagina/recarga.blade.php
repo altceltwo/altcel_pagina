@@ -95,7 +95,7 @@
 
 <div class="modal" id="modal-Conekta" style="width: 18rem;">
      <div class="card-body">
-          <div id="conektaIframeContainer" class="d-none" style="height: 700px;"> <h1>hola</h1></div>
+          <div id="conektaIframeContainer" class="d-none" style="height: 700px;"></div>
      </div>
    </div>
 
