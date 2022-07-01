@@ -14317,9 +14317,59 @@ color: white;
 
  #modal-ticket{
 	width: 50rem;
+	/* width: 89rem; */
 	background-color:white;
 	margin-left: 43rem;
+	/* margin-left: 23rem; */
 	border-style: solid;
 	margin-top: 2rem;
 	margin-bottom: 2rem;
  }
+
+
+
+ /***TICKET****/
+ .bart-img{
+	width: 118%;
+	margin-left: -4rem;
+	margin-top: -5rem;
+	background: #333333;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #dd1818, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+ }
+ .img-logo__ticket{
+	width: 56%;
+    margin-top: -2rem;
+}
+.btnImprimir{
+	margin-top: 3rem;
+	width: 100%;
+	margin-left: 2rem;
+	margin-top: 7rem;
+	
+}
+.btnCerrar{
+	width: 100%;
+	margin-left: 11.5rem;
+	margin-top: 7rem;
+	
+	background: #333333;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #dd1818, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	border-color: #333333;  /* fallback for old browsers */
+	border-color: -webkit-linear-gradient(to right, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
+	border-color: linear-gradient(to right, #dd1818, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#description{
+	font-size: 2rem;
+}
+.font-text{
+	font-size: 1.5rem;
+}
+.text_info__pago{
+	text-align: center;
+	font-weight: bold;
+	position: absolute;
+}

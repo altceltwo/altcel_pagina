@@ -104,7 +104,9 @@
    <div class="content" style="margin: 5rem;">
         <div class="row justify-content-center">
           <div class="col-8 text-center">
-            <img src="{{ asset('images/logo.png') }}" width="130px" alt="">
+               <div class="bart-img">
+                    <img class="img-logo__ticket" src="{{ asset('images/Logotipo-01.png') }}" width="130px" alt="">
+               </div>
             <br>
             <br>
             <div class="alert " role="alert">
@@ -116,32 +118,35 @@
           <div class="col-8">
             <table class="table">
               <tr>
-                <td>Fecha y Hora:</td>
+                <td class="font-text">Fecha y Hora:</td>
                 <td id="date_ticket"></td>
               </tr>
               <tr>
-                <td># de transacción:</td>
+                <td class="font-text"># de transacción:</td>
                 <td id="transa"></td>
               </tr>
               <tr>
-                <td># de Autorización:</td>
+                <td class="font-text"># de Autorización:</td>
                 <td id="autorization"></td>
               </tr>
               <tr>
-                <td>Monto de la Recarga:</td>
+                <td class="font-text">Monto de la Recarga:</td>
                 <td id="amount_ticket">$ </td>
               </tr>
               <tr>
-                <td>Teléfono:</td>
+                <td class="font-text">Teléfono:</td>
                 <td id="phone_ticket"></td>
               </tr>
               <tr>
-                <td width="45%">Observaciones:</td>
+                <td class="font-text" width="45%">Observaciones:</td>
                 <td class="text-justify" id="observation"></td>
               </tr>
+              <tr>
+                <td class="font-text text_info__pago">Puedes captura este comprobante para cualquier aclaración.</td>
+              </tr>
               <tr class="no-print d-print-none">
-                <td class="text-center"><button class="btn btn-primary" onclick="myFunction()">Imprimir</button></td>
-                <td class="text-center"><button class="btn btn-danger" data-dismiss="modal">Cerrar</button></td>
+                <!-- <td class="text-center"><button class="btn btn-primary btnImprimir" onclick="javascript:window.print()">Imprimir</button></td> -->
+                <td class="text-center"><button class="btn btn-danger btnCerrar" data-dismiss="modal">Cerrar</button></td>
               </tr>
             </table>
           </div>
@@ -275,11 +280,13 @@
                                    console.log(event,'MI EVENTO');
                               
                                    if (status == 'paid') {
+                                        let timerInterval
                                         Swal.fire({
                                              title: 'Estamos realizando su recarga...',
                                              html: 'Espera un poco, por favor...',
                                              timerProgressBar: true,
                                              didOpen: () => {
+                                                  Swal.showLoading()
                                                   $.ajax({
                                                        url: "{{route('tarNor')}}",
                                                        type: 'GET',
