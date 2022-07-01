@@ -34,7 +34,16 @@ class RechargeController extends Controller
             // $x = $this->ConektaPayment->createPaymentLink($request);
             $x = $this->ConektaPayment->checkout($request);
         }else {
-            return 1;
+            $responseUnbarring = Http::withHeaders([
+                'Content-type' => 'application/json'
+            ])->post('http://187.217.216.244/appUser',[
+                'client_msisdn' => $phone,
+            ]);
+
+            if ($responseUnbarring['dataUser']['exists'] == 1) {
+                return 'A2';
+            }
+
         }
         
         return $x;
