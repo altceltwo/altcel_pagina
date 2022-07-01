@@ -264,6 +264,18 @@
                               showConfirmButton: true,
                               // timer: 2000
                          });
+                    }else if (response == 'A2') {
+                         Swal.fire({
+                              icon: 'warning',
+                              title: 'Uhhh...',
+                              text: 'Al parecer tu número pertenece a Conecta, te redirigiremos a allá..',
+                              showConfirmButton: false,
+                              // timer: 2000
+                         });
+                         setTimeout(function(){
+                              location.href = 'https://altcel2.com/my-conecta';
+                         },2500)
+                         
                     }else{
                          $("#modal-Conekta").modal("show");
                          // console.log(response.checkout.id)
