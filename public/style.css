@@ -14353,7 +14353,7 @@ color: white;
 	width: 100%;
 	margin-left: 11.5rem;
 	margin-top: 7rem;
-	
+
 	background: #333333;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #dd1818, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -14372,4 +14372,17 @@ color: white;
 	text-align: center;
 	font-weight: bold;
 	position: absolute;
+}
+
+#btnCerrar_conect{
+	display: none;
+}
+
+.btnCerrar_conect{
+	width: 100%;
+	margin-left: 0rem;
+	margin-top: 3rem;
+	background: #ff0000c2;
+	border-color: #333333;
+	height: 5rem;
 }

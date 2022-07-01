@@ -95,7 +95,9 @@
 
 <div class="modal" id="modal-Conekta" style="width: 18rem;">
      <div class="card-body">
-          <div id="conektaIframeContainer" class="d-none" style="height: 700px;"></div>
+          <div id="conektaIframeContainer" class="d-none" style="height: 700px;">
+          <button id="btnCerrar_conect" class="btn btn-danger btnCerrar_conect" onclick="closeConec()">Cerrar</button>
+     </div>
      </div>
    </div>
 
@@ -146,7 +148,7 @@
               </tr>
               <tr class="no-print d-print-none">
                 <!-- <td class="text-center"><button class="btn btn-primary btnImprimir" onclick="javascript:window.print()">Imprimir</button></td> -->
-                <td class="text-center"><button class="btn btn-danger btnCerrar" data-dismiss="modal">Cerrar</button></td>
+                <td class="text-center"><button class="btn btn-danger btnCerrar" id="miostrarBTN" data-dismiss="modal" onclick="closeMe()">Cerrar</button></td>
               </tr>
             </table>
           </div>
@@ -269,8 +271,8 @@
                          window.ConektaCheckoutComponents.Integration({
                               targetIFrame: "#conektaIframeContainer",
                               checkoutRequestId: checkoutRequestId, // checkout request id
-                              publicKey: "key_WNqM3nJHo3J83tsXxrTxB3A", //produccion
-                              //publicKey: "key_KUxx4Sd9v8RiryYp27quVVA", //pruebas
+                              // publicKey: "key_WNqM3nJHo3J83tsXxrTxB3A", //produccion
+                              publicKey: "key_KUxx4Sd9v8RiryYp27quVVA", //pruebas
                               options: {},
                               styles: {},
                               onFinalizePayment: function(event){
@@ -333,10 +335,13 @@
      function myFunction() {
       window.print();
     }
-    function closeMe()
-    {
+    function closeMe(){
+     $('#btnCerrar_conect').show();
       window.opener = self;
       window.close();
+    }
+    function closeConec(){
+     location.reload();
     }
           
 
