@@ -14017,7 +14017,8 @@ nav .indicador {
 		position: fixed;
 		width: 100%;
 		height: 31vh;
-		background: #06618F;
+		background: #8a0909e0;
+		/* background: #06618F; */
 		top: 80px;
 		left: -100%;
 		text-align: center;
